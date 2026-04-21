@@ -782,7 +782,10 @@ function SongView({ song, songs, onSelectSong, onSelectArtist }) {
                 onClick={() => s.id !== song.id && onSelectSong(s.id)}
               >
                 <div className="more-item-title">{s.titleRoman}</div>
-                <span className="more-item-meta">Key: {s.key}</span>
+                <div style={{display:'flex',gap:6}}>
+                  <span className="more-item-meta">Key: {s.key}</span>
+                  <span className="more-item-meta">{s.beat}</span>
+                </div>
               </div>
             ))}
           </div>
