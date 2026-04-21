@@ -263,7 +263,7 @@ const { useState, useEffect } = React;
 
 // ── Site config ───────────────────────────────────────────────────────────────
 const SITE_CONFIG = {
-  showAds: false,                                    // set true once AdSense approved
+  showAds: true,                                     // set false to hide ads
   showBmc: true,
   bmcUrl:  'https://buymeacoffee.com/sinhalachords',
 };
@@ -393,6 +393,7 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
           Your go-to place for Sinhala guitar chord charts.<br/>
           Pick a song, grab your guitar, and play.
         </div>
+        <div className="ad-wrap"><AdBlock size="sm" /></div>
         <div className="home-search-wrap">
           <span className="home-search-icon"><SearchSVG /></span>
           <input
@@ -434,24 +435,43 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
 
 // ── All Artists Page ──────────────────────────────────────────────────────────
 function AllArtistsPage({ songs, onSelectArtist }) {
+  const [q, setQ] = useState('');
   const artistMap = {};
   songs.forEach(s => { artistMap[s.artist] = (artistMap[s.artist]||0)+1; });
-  const artists = Object.entries(artistMap).sort((a,b)=>b[1]-a[1]);
+  const allArtists = Object.entries(artistMap).sort((a,b)=>b[1]-a[1]);
+  const artists = q.trim()
+    ? allArtists.filter(([name])=>name.toLowerCase().includes(q.trim().toLowerCase()))
+    : allArtists;
   return (
     <div className="page">
       <div className="page-title">All Artists</div>
-      <div className="page-sub">{artists.length} artists</div>
-      <div className="artist-grid">
-        {artists.map(([name,count])=>(
-          <div key={name} className="artist-card" onClick={()=>onSelectArtist(name)}>
-            <div>
-              <div className="artist-card-name">{name}</div>
-              <div className="artist-card-count">{count} song{count!==1?'s':''}</div>
-            </div>
-            <span className="artist-card-right">›</span>
-          </div>
-        ))}
+      <div className="page-sub">{allArtists.length} artists</div>
+      <div className="ad-wrap"><AdBlock size="sm" /></div>
+      <div className="home-search-wrap" style={{marginBottom:20}}>
+        <span className="home-search-icon"><SearchSVG /></span>
+        <input
+          className="home-search"
+          placeholder="Search artists…"
+          value={q}
+          onChange={e=>setQ(e.target.value)}
+          autoComplete="off"
+        />
       </div>
+      {artists.length ? (
+        <div className="artist-grid">
+          {artists.map(([name,count])=>(
+            <div key={name} className="artist-card" onClick={()=>onSelectArtist(name)}>
+              <div>
+                <div className="artist-card-name">{name}</div>
+                <div className="artist-card-count">{count} song{count!==1?'s':''}</div>
+              </div>
+              <span className="artist-card-right">›</span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="no-results">No artists found for "{q}"</div>
+      )}
     </div>
   );
 }
@@ -700,7 +720,7 @@ function Footer({ onNav }) {
           </div>
         </div>
         <div className="footer-bottom">
-          <span className="footer-copy">© 2025 Sinhala Chroads. All rights reserved.</span>
+          <span className="footer-copy">© 2026 Sinhala Chroads. All rights reserved.</span>
           <div className="footer-legal">
             <a href="#" onClick={e=>{e.preventDefault();onNav('privacy');}}>Privacy</a>
             <a href="#" onClick={e=>{e.preventDefault();onNav('terms');}}>Terms</a>
