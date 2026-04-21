@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harsha-sira.github.io/chroads/sitemap.xml

@@ -3,7 +3,65 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sinhala Chroads — Guitar Chords & Lyrics</title>
+
+<!-- ── SEO: Base meta (updated dynamically per page) ── -->
+<title>Sinhala Chroads — Free Sinhala Guitar Chords & Lyrics</title>
+<meta name="description" content="Your go-to place for free Sinhala guitar chord charts. Find chords and lyrics for your favourite Sinhala songs by top artists." />
+<meta name="keywords" content="sinhala guitar chords, sinhala chords, sinhala guitar tabs, sinhala song chords, guitar chords sinhala, sinhala music chords, ස්වරය, ගිටාර් ස්වර" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="Sinhala" />
+<meta name="author" content="Sinhala Chroads" />
+<link rel="canonical" href="https://harsha-sira.github.io/chroads/" />
+
+<!-- ── Open Graph (WhatsApp, Facebook previews) ── -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sinhala Chroads" />
+<meta property="og:title" content="Sinhala Chroads — Free Sinhala Guitar Chords & Lyrics" />
+<meta property="og:description" content="Your go-to place for free Sinhala guitar chord charts. Find chords and lyrics for your favourite Sinhala songs." />
+<meta property="og:url" content="https://harsha-sira.github.io/chroads/" />
+<meta property="og:locale" content="si_LK" />
+<meta property="og:locale:alternate" content="en_US" />
+
+<!-- ── Twitter Card ── -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Sinhala Chroads — Free Sinhala Guitar Chords & Lyrics" />
+<meta name="twitter:description" content="Your go-to place for free Sinhala guitar chord charts." />
+
+<!-- ── JSON-LD: Website structured data (updated per page) ── -->
+<script type="application/ld+json" id="ld-json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Sinhala Chroads",
+      "alternateName": "Sinhala Guitar Chords",
+      "url": "https://harsha-sira.github.io/chroads/",
+      "description": "Free Sinhala guitar chord charts and lyrics",
+      "inLanguage": ["si", "en"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://harsha-sira.github.io/chroads/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ── SPA redirect handler (pairs with 404.html) ── -->
+<script>
+  (function(l) {
+    if (l.search[1] === '/') {
+      var decoded = l.search.slice(1).split('&').map(function(s) {
+        return s.replace(/~and~/g, '&');
+      }).join('?');
+      window.history.replaceState(null, null,
+        l.pathname.slice(0, -1) + decoded + l.hash
+      );
+    }
+  }(window.location));
+</script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL1GPR61JG"></script>
@@ -76,31 +134,16 @@ a { color: inherit; text-decoration: none; }
   transition: background 0.12s;
 }
 .nav-back:hover { background: var(--surface2); }
-.nav-logo {
-  font-size: 16px; font-weight: 700; letter-spacing: -0.3px;
-  color: var(--text); cursor: pointer; flex-shrink: 0;
-}
+.nav-logo { font-size: 16px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); cursor: pointer; flex-shrink: 0; }
 .nav-logo span { color: var(--chord); }
 .nav-spacer { flex: 1; }
 
 /* ── THEME TOGGLE ── */
-.toggle-sw-wrap {
-  display: flex; align-items: center; gap: 6px;
-  cursor: pointer; flex-shrink: 0; user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
+.toggle-sw-wrap { display: flex; align-items: center; gap: 6px; cursor: pointer; flex-shrink: 0; user-select: none; -webkit-tap-highlight-color: transparent; }
 .toggle-sw-icon { display: flex; align-items: center; justify-content: center; color: var(--text-muted); }
-.toggle-sw-track {
-  width: 40px; height: 22px; border-radius: 11px;
-  background: var(--surface2); border: 1.5px solid var(--border);
-  position: relative; transition: background 0.2s, border-color 0.2s; flex-shrink: 0;
-}
+.toggle-sw-track { width: 40px; height: 22px; border-radius: 11px; background: var(--surface2); border: 1.5px solid var(--border); position: relative; transition: background 0.2s, border-color 0.2s; flex-shrink: 0; }
 .toggle-sw-track.on { background: #4c1d95; border-color: #6d28d9; }
-.toggle-sw-thumb {
-  position: absolute; top: 2px; left: 2px;
-  width: 14px; height: 14px; border-radius: 50%;
-  background: var(--text-muted); transition: transform 0.2s, background 0.2s;
-}
+.toggle-sw-thumb { position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--text-muted); transition: transform 0.2s, background 0.2s; }
 .toggle-sw-track.on .toggle-sw-thumb { transform: translateX(18px); background: #a78bfa; }
 
 /* ── HOME ── */
@@ -110,20 +153,10 @@ a { color: inherit; text-decoration: none; }
 .home-title span { color: var(--chord); }
 .home-sub { color: var(--text-muted); font-size: 15px; margin-bottom: 24px; line-height: 1.5; }
 .home-search-wrap { position: relative; text-align: left; margin-bottom: 20px; }
-.home-search {
-  width: 100%; background: var(--surface);
-  border: 1.5px solid var(--border); border-radius: 12px;
-  padding: 15px 16px 15px 52px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 16px; color: var(--text); outline: none;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
+.home-search { width: 100%; background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 15px 16px 15px 52px; font-family: 'Space Grotesk', sans-serif; font-size: 16px; color: var(--text); outline: none; transition: border-color 0.15s, box-shadow 0.15s; }
 .home-search:focus { border-color: var(--chord); box-shadow: 0 0 0 3px var(--chord-bg); }
 .home-search::placeholder { color: var(--text-muted); }
-.home-search-icon {
-  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
-  color: var(--chord); pointer-events: none; display: flex; align-items: center;
-}
+.home-search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--chord); pointer-events: none; display: flex; align-items: center; }
 
 /* ── SECTION LABELS ── */
 .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
@@ -132,12 +165,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── SONG CARDS ── */
 .songs-list { display: flex; flex-direction: column; gap: 2px; }
-.song-card {
-  background: var(--bg); border: 1px solid var(--border); border-radius: 12px;
-  padding: 14px 16px; cursor: pointer;
-  transition: border-color 0.12s, background 0.12s;
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
-}
+.song-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; cursor: pointer; transition: border-color 0.12s, background 0.12s; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .song-card:active { background: var(--surface); }
 .song-card-left { flex: 1; min-width: 0; }
 .song-card-title { font-size: 16px; font-weight: 600; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -153,15 +181,9 @@ a { color: inherit; text-decoration: none; }
 /* ── ALL ARTISTS PAGE ── */
 .page { max-width: 600px; margin: 0 auto; padding: 28px 16px 40px; }
 .page-title { font-size: 32px; font-weight: 700; letter-spacing: -1px; margin-bottom: 4px; }
-.page-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+.page-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
 .artist-grid { display: flex; flex-direction: column; gap: 2px; }
-.artist-card {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 16px; border-radius: 12px; cursor: pointer;
-  border: 1px solid var(--border); background: var(--bg);
-  transition: border-color 0.12s, background 0.12s;
-  -webkit-tap-highlight-color: transparent;
-}
+.artist-card { display: flex; align-items: center; justify-content: space-between; padding: 16px; border-radius: 12px; cursor: pointer; border: 1px solid var(--border); background: var(--bg); transition: border-color 0.12s, background 0.12s; -webkit-tap-highlight-color: transparent; }
 .artist-card:active { background: var(--surface); }
 .artist-card-name { font-size: 17px; font-weight: 600; }
 .artist-card-count { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
@@ -169,12 +191,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── ARTIST SONGS LIST ── */
 .artist-songs-list { display: flex; flex-direction: column; gap: 2px; }
-.artist-song-item {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 14px 16px; border-radius: 12px; cursor: pointer;
-  border: 1px solid transparent; transition: all 0.1s;
-  -webkit-tap-highlight-color: transparent;
-}
+.artist-song-item { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border-radius: 12px; cursor: pointer; border: 1px solid transparent; transition: all 0.1s; -webkit-tap-highlight-color: transparent; }
 .artist-song-item:active { background: var(--surface); border-color: var(--border); }
 .artist-song-title { font-size: 16px; font-weight: 600; }
 .artist-song-meta { display: flex; gap: 6px; }
@@ -263,12 +280,116 @@ const { useState, useEffect } = React;
 
 // ── Site config ───────────────────────────────────────────────────────────────
 const SITE_CONFIG = {
-  showAds: true,                                     // set false to hide ads
+  showAds: true,
   showBmc: true,
   bmcUrl:  'https://buymeacoffee.com/sinhalachords',
 };
 
+// ── Routing constants — update both when moving to a custom domain ────────────
+const BASE_PATH = '/chroads';
+const BASE_URL  = 'https://harsha-sira.github.io/chroads';
+
 const SONGS = window.SONGS_DATA;
+
+// ── URL / slug helpers ────────────────────────────────────────────────────────
+function slugify(str) {
+  return str.toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '');
+}
+
+function getUrl(view, extras) {
+  if (view === 'song' && extras.songId) {
+    const s = SONGS.find(s => s.id === extras.songId);
+    if (s) return `${BASE_PATH}/song/${slugify(s.titleRoman)}`;
+  }
+  if (view === 'artist' && extras.artist) return `${BASE_PATH}/artist/${slugify(extras.artist)}`;
+  if (view === 'allArtists') return `${BASE_PATH}/artists`;
+  return `${BASE_PATH}/`;
+}
+
+function parseUrl() {
+  let path = window.location.pathname.replace(BASE_PATH, '') || '/';
+  if (!path.startsWith('/')) path = '/' + path;
+
+  if (path.startsWith('/song/')) {
+    const slug = path.slice(6).replace(/\/$/, '');
+    const song = SONGS.find(s => slugify(s.titleRoman) === slug);
+    if (song) return { view: 'song', songId: song.id };
+  }
+  if (path.startsWith('/artist/')) {
+    const slug = path.slice(8).replace(/\/$/, '');
+    const artist = [...new Set(SONGS.map(s => s.artist))].find(a => slugify(a) === slug);
+    if (artist) return { view: 'artist', artist };
+  }
+  if (path === '/artists' || path === '/artists/') return { view: 'allArtists' };
+  return { view: 'home' };
+}
+
+// ── SEO updater — called on every navigation ──────────────────────────────────
+function updateSEO(entry) {
+  const { view, songId, artist } = entry;
+  const SITE = 'Sinhala Chroads';
+  let title = `${SITE} — Free Sinhala Guitar Chords & Lyrics`;
+  let desc  = 'Your go-to place for free Sinhala guitar chord charts. Find chords and lyrics for your favourite Sinhala songs.';
+  let url   = `${BASE_URL}/`;
+  let graph = [{
+    '@type': 'WebSite',
+    name: SITE,
+    alternateName: 'Sinhala Guitar Chords',
+    url: `${BASE_URL}/`,
+    inLanguage: ['si', 'en'],
+    potentialAction: { '@type': 'SearchAction', target: `${BASE_URL}/?search={search_term_string}`, 'query-input': 'required name=search_term_string' }
+  }];
+
+  if (view === 'song' && songId) {
+    const s = SONGS.find(s => s.id === songId);
+    if (s) {
+      url   = `${BASE_URL}/song/${slugify(s.titleRoman)}`;
+      title = `${s.titleRoman} Chords — ${s.artist} | ${SITE}`;
+      desc  = `Free guitar chords for ${s.titleRoman}${s.titleSi ? ' ('+s.titleSi+')' : ''} by ${s.artist}. `
+            + `Key: ${s.key}${s.capo ? ', Capo '+s.capo : ''}. Beat: ${s.beat}. `
+            + `Sinhala guitar chord chart with transpose tool.`;
+      graph.push({
+        '@type': 'MusicComposition',
+        name: s.titleRoman,
+        alternateName: s.titleSi || undefined,
+        url,
+        inLanguage: 'si',
+        composer: { '@type': 'Person', name: s.artist },
+        musicArrangement: `${s.titleRoman} Guitar Chords`,
+        description: desc,
+      });
+    }
+  } else if (view === 'artist' && artist) {
+    const count = SONGS.filter(s => s.artist === artist).length;
+    url   = `${BASE_URL}/artist/${slugify(artist)}`;
+    title = `${artist} Guitar Chords (${count} songs) | ${SITE}`;
+    desc  = `${count} free Sinhala guitar chord chart${count!==1?'s':''} for ${artist}. `
+          + `Play your favourite ${artist} songs with accurate chord charts.`;
+    graph.push({ '@type': 'Person', name: artist, url });
+  } else if (view === 'allArtists') {
+    url   = `${BASE_URL}/artists`;
+    title = `All Artists | ${SITE}`;
+    desc  = `Browse all Sinhala artists and their free guitar chord charts on ${SITE}.`;
+  }
+
+  document.title = title;
+  setMeta('name',     'description',       desc);
+  setMeta('property', 'og:title',          title);
+  setMeta('property', 'og:description',    desc);
+  setMeta('property', 'og:url',            url);
+  setMeta('name',     'twitter:title',     title);
+  setMeta('name',     'twitter:description', desc);
+  document.querySelector('link[rel=canonical]').href = url;
+  document.getElementById('ld-json').textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+}
+
+function setMeta(attr, key, val) {
+  const el = document.querySelector(`meta[${attr}="${key}"]`);
+  if (el) el.setAttribute('content', val);
+}
 
 // ── Music utilities ───────────────────────────────────────────────────────────
 const SHARP = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
@@ -368,7 +489,7 @@ function SongCard({ song, onClick }) {
       </div>
       <div className="song-card-right">
         <span className="pill">Key: {song.key}</span>
-        {song.capo>0 && <span className="pill">Capo {song.capo}</span>}
+        {song.capo>0&&<span className="pill">Capo {song.capo}</span>}
       </div>
     </div>
   );
@@ -390,7 +511,7 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
       <div className="home-hero">
         <div className="home-title">Sinhala Ch<span>r</span>oads</div>
         <div className="home-sub">
-          Your go-to place for Sinhala guitar chord charts.<br/>
+          Your go-to place for free Sinhala guitar chord charts.<br/>
           Pick a song, grab your guitar, and play.
         </div>
         <div className="ad-wrap"><AdBlock size="sm" /></div>
@@ -445,33 +566,26 @@ function AllArtistsPage({ songs, onSelectArtist }) {
   return (
     <div className="page">
       <div className="page-title">All Artists</div>
-      <div className="page-sub">{allArtists.length} artists</div>
+      <div className="page-sub">{allArtists.length} artists · {songs.length} songs</div>
       <div className="ad-wrap"><AdBlock size="sm" /></div>
       <div className="home-search-wrap" style={{marginBottom:20}}>
         <span className="home-search-icon"><SearchSVG /></span>
-        <input
-          className="home-search"
-          placeholder="Search artists…"
-          value={q}
-          onChange={e=>setQ(e.target.value)}
-          autoComplete="off"
-        />
+        <input className="home-search" placeholder="Search artists…" value={q} onChange={e=>setQ(e.target.value)} autoComplete="off" />
       </div>
-      {artists.length ? (
-        <div className="artist-grid">
-          {artists.map(([name,count])=>(
-            <div key={name} className="artist-card" onClick={()=>onSelectArtist(name)}>
-              <div>
-                <div className="artist-card-name">{name}</div>
-                <div className="artist-card-count">{count} song{count!==1?'s':''}</div>
+      {artists.length
+        ? <div className="artist-grid">
+            {artists.map(([name,count])=>(
+              <div key={name} className="artist-card" onClick={()=>onSelectArtist(name)}>
+                <div>
+                  <div className="artist-card-name">{name}</div>
+                  <div className="artist-card-count">{count} song{count!==1?'s':''}</div>
+                </div>
+                <span className="artist-card-right">›</span>
               </div>
-              <span className="artist-card-right">›</span>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div className="no-results">No artists found for "{q}"</div>
-      )}
+            ))}
+          </div>
+        : <div className="no-results">No artists found for "{q}"</div>
+      }
     </div>
   );
 }
@@ -482,7 +596,7 @@ function ArtistPage({ artistName, songs, onSelectSong }) {
   return (
     <div className="page">
       <div className="page-title">{artistName}</div>
-      <div className="page-sub">{artistSongs.length} song{artistSongs.length!==1?'s':''}</div>
+      <div className="page-sub">{artistSongs.length} song{artistSongs.length!==1?'s':''} · Free Sinhala guitar chords</div>
       <div className="artist-songs-list">
         {artistSongs.map(s=>(
           <div key={s.id} className="artist-song-item" onClick={()=>onSelectSong(s.id)}>
@@ -561,8 +675,7 @@ function SongView({ song, songs, onSelectSong, onArtist }) {
   useEffect(()=>{ localStorage.setItem(`tr_${song.id}`,semitones); },   [semitones,song.id]);
   useEffect(()=>{ localStorage.setItem(`sk_${song.id}`,selectedKey); }, [selectedKey,song.id]);
 
-  const handleKeyPick = (k,st) => { setSelectedKey(k); setSemitones(st); };
-
+  const handleKeyPick=(k,st)=>{ setSelectedKey(k); setSemitones(st); };
   const artistSongs = songs.filter(s=>s.artist===song.artist);
   const moreSongs   = artistSongs.filter(s=>s.id!==song.id).slice(0,10);
   const hasMore     = artistSongs.length>11;
@@ -571,6 +684,7 @@ function SongView({ song, songs, onSelectSong, onArtist }) {
     <div className="song-page">
       <div className="song-header">
         <div className="song-title">{song.titleRoman}</div>
+        {song.titleSi && <div style={{fontSize:20,color:'var(--text-dim)',marginBottom:4,fontFamily:"'Noto Sans Sinhala',sans-serif"}}>{song.titleSi}</div>}
         <div className="song-artist">
           <button onClick={()=>onArtist(song.artist)}>{song.artist}</button>
         </div>
@@ -593,10 +707,7 @@ function SongView({ song, songs, onSelectSong, onArtist }) {
             <div style={{fontSize:12,fontWeight:600,color:'var(--text-muted)',letterSpacing:1,textTransform:'uppercase'}}>
               More by {song.artist}
             </div>
-            {hasMore&&(
-              <span style={{fontSize:12,fontWeight:600,color:'var(--chord)',cursor:'pointer'}}
-                onClick={()=>onArtist(song.artist)}>See all →</span>
-            )}
+            {hasMore&&<span style={{fontSize:12,fontWeight:600,color:'var(--chord)',cursor:'pointer'}} onClick={()=>onArtist(song.artist)}>See all →</span>}
           </div>
           <div className="more-list">
             {moreSongs.map(s=>(
@@ -611,7 +722,6 @@ function SongView({ song, songs, onSelectSong, onArtist }) {
           </div>
         </div>
       )}
-
       <div style={{margin:'20px 0'}}><AdBlock size="sm" /></div>
     </div>
   );
@@ -622,14 +732,10 @@ function PrivacyPage() {
   return (
     <div className="legal-page">
       <h1>Privacy Policy</h1>
-      <p className="legal-date">Last updated: April 2025</p>
-      <p>Sinhala Chroads ("we", "us") operates this website. This page explains our policies on data collection and use.</p>
-      <h2>Information We Collect</h2>
-      <p>We do not collect personally identifiable information directly. Third-party services (Google Analytics, Google AdSense) may collect data per their own policies.</p>
-      <h2>Cookies</h2>
-      <p>We use local browser storage to save your theme preference and last-viewed song. Google Analytics and AdSense may set cookies for analytics and personalized ads.</p>
-      <h2>Google AdSense</h2>
-      <p>We use Google AdSense to display advertisements. You may opt out at <a href="https://www.google.com/settings/ads" target="_blank" rel="noreferrer">Google Ads Settings</a>.</p>
+      <p className="legal-date">Last updated: April 2026</p>
+      <p>Sinhala Chroads does not collect personally identifiable information directly. Third-party services (Google Analytics, Google AdSense) may collect data per their own policies.</p>
+      <h2>Cookies &amp; Storage</h2>
+      <p>We use local browser storage to save your theme preference. Google Analytics and AdSense may set cookies for analytics and personalized ads. You may opt out at <a href="https://www.google.com/settings/ads" target="_blank" rel="noreferrer">Google Ads Settings</a>.</p>
       <h2>Google Analytics</h2>
       <p>We use Google Analytics to understand how visitors use the site. Data is anonymized and aggregated.</p>
       <h2>Contact</h2>
@@ -642,7 +748,7 @@ function TermsPage() {
   return (
     <div className="legal-page">
       <h1>Terms and Conditions</h1>
-      <p className="legal-date">Last updated: April 2025</p>
+      <p className="legal-date">Last updated: April 2026</p>
       <p>By using Sinhala Chroads, you agree to these terms.</p>
       <h2>Use of the Service</h2>
       <ul>
@@ -653,9 +759,7 @@ function TermsPage() {
       <h2>Intellectual Property</h2>
       <p>Song lyrics and compositions belong to their respective copyright holders. Chord charts are provided for educational purposes. Rights holders may contact us for removal requests.</p>
       <h2>Disclaimer</h2>
-      <p>Chord charts are provided "as is" without warranty of accuracy. Use at your own discretion.</p>
-      <h2>Advertising</h2>
-      <p>This site may display advertisements via Google AdSense. We are not responsible for ad content.</p>
+      <p>Chord charts are provided "as is" without warranty of accuracy.</p>
     </div>
   );
 }
@@ -703,7 +807,7 @@ function Footer({ onNav }) {
       <div className="footer-inner">
         <div>
           <div className="footer-brand">Sinhala Ch<span>r</span>oads</div>
-          <div className="footer-tagline">Your go-to place for Sinhala guitar chord charts</div>
+          <div className="footer-tagline">Free Sinhala guitar chord charts &amp; lyrics</div>
         </div>
         <div className="footer-nav-grid">
           <div className="footer-nav-col">
@@ -732,10 +836,10 @@ function Footer({ onNav }) {
   );
 }
 
-// ── App — navigation stack ────────────────────────────────────────────────────
+// ── App — navigation stack with URL routing ───────────────────────────────────
 function App() {
   const [theme,setTheme] = useState(()=>localStorage.getItem('ch_theme')||'light');
-  const [stack,setStack] = useState([{view:'home'}]);
+  const [stack,setStack] = useState(()=>[parseUrl()]);
 
   const current   = stack[stack.length-1];
   const canGoBack = stack.length>1;
@@ -745,9 +849,38 @@ function App() {
     localStorage.setItem('ch_theme',theme);
   },[theme]);
 
-  const push  = (view,extras={}) => { setStack(s=>[...s,{view,...extras}]); window.scrollTo(0,0); };
-  const goBack = () => { setStack(s=>s.length>1?s.slice(0,-1):s); window.scrollTo(0,0); };
-  const goHome = () => { setStack([{view:'home'}]); window.scrollTo(0,0); };
+  // Update URL + SEO on every navigation
+  useEffect(()=>{
+    updateSEO(current);
+  },[current]);
+
+  // Handle browser back/forward buttons
+  useEffect(()=>{
+    const handler = ()=>{
+      setStack(s=>s.length>1?s.slice(0,-1):[{view:'home'}]);
+    };
+    window.addEventListener('popstate',handler);
+    return ()=>window.removeEventListener('popstate',handler);
+  },[]);
+
+  const push = (view,extras={}) => {
+    const url = getUrl(view,extras);
+    window.history.pushState({view,...extras},'',url);
+    setStack(s=>[...s,{view,...extras}]);
+    window.scrollTo(0,0);
+  };
+
+  const goBack = ()=>{
+    window.history.back();
+    setStack(s=>s.length>1?s.slice(0,-1):[{view:'home'}]);
+    window.scrollTo(0,0);
+  };
+
+  const goHome = ()=>{
+    window.history.pushState({view:'home'},'',`${BASE_PATH}/`);
+    setStack([{view:'home'}]);
+    window.scrollTo(0,0);
+  };
 
   const song = SONGS.find(s=>s.id===current.songId);
 
