@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="si" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chroads — Sinhala Guitar Chords</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #ffffff;
+  --surface: #f5f5f7;
+  --surface2: #ebebed;
+  --border: #e0e0e2;
+  --text: #1a1820;
+  --text-muted: #9b98a3;
+  --text-dim: #6b6870;
+  --chord: #2563eb;
+  --chord-bg: rgba(37,99,235,0.07);
+  --section: #7c3aed;
+  --nav-h: 56px;
+}
+[data-theme="dark"] {
+  --bg: #0d0c10;
+  --surface: #16141c;
+  --surface2: #1e1c27;
+  --border: #2d2b38;
+  --text: #ede9e3;
+  --text-muted: #6b6780;
+  --text-dim: #9d99aa;
+  --chord: #f5a623;
+  --chord-bg: rgba(245,166,35,0.08);
+  --section: #a78bfa;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.2s, color 0.2s;
+  -webkit-font-smoothing: antialiased;
+}
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+a { color: inherit; text-decoration: none; }
+
+/* ── NAV ── */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  height: var(--nav-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+  padding: 0 16px; gap: 10px;
+}
+.nav-back {
+  width: 36px; height: 36px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; color: var(--text-dim);
+  flex-shrink: 0; transition: background 0.12s;
+}
+.nav-back:hover { background: var(--surface2); }
+.nav-logo {
+  font-size: 18px; font-weight: 700; letter-spacing: -0.5px;
+  color: var(--text); cursor: pointer; flex-shrink: 0;
+}
+.nav-logo span { color: var(--chord); }
+.nav-spacer { flex: 1; }
+
+/* ── THEME TOGGLE SWITCH ── */
+.toggle-sw-wrap {
+  display: flex; align-items: center; gap: 6px;
+  cursor: pointer; flex-shrink: 0; user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.toggle-sw-icon {
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 0; line-height: 1;
+}
+.toggle-sw-track {
+  width: 40px; height: 22px; border-radius: 11px;
+  background: var(--surface2); border: 1.5px solid var(--border);
+  position: relative; transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+.toggle-sw-track.on {
+  background: #4c1d95; border-color: #6d28d9;
+}
+.toggle-sw-thumb {
+  position: absolute; top: 2px; left: 2px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--text-muted);
+  transition: transform 0.2s, background 0.2s;
+}
+.toggle-sw-track.on .toggle-sw-thumb {
+  transform: translateX(18px);
+  background: #a78bfa;
+}
+
+/* ── HOME ── */
+.home { max-width: 600px; margin: 0 auto; padding: 40px 16px 80px; }
+.home-hero { margin-bottom: 40px; }
+.home-title {
+  font-size: 48px; font-weight: 700; letter-spacing: -2px; line-height: 1;
+  margin-bottom: 6px;
+}
+.home-title span { color: var(--chord); }
+.home-sub { color: var(--text-muted); font-size: 14px; margin-bottom: 28px; }
+.home-search-wrap { position: relative; }
+.home-search {
+  width: 100%;
+  background: var(--surface);
+  border: 1.5px solid var(--border); border-radius: 12px;
+  padding: 14px 16px 14px 44px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px; color: var(--text); outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.home-search:focus { border-color: var(--chord); box-shadow: 0 0 0 3px var(--chord-bg); }
+.home-search::placeholder { color: var(--text-muted); }
+.home-search-icon {
+  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+  color: var(--text-muted); font-size: 18px; pointer-events: none;
+}
+.section-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;
+}
+.songs-list { display: flex; flex-direction: column; gap: 2px; }
+.song-card {
+  background: var(--bg);
+  border: 1px solid var(--border); border-radius: 12px;
+  padding: 14px 16px; cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.song-card:active { background: var(--surface); }
+.song-card-left { flex: 1; min-width: 0; }
+.song-card-title { font-size: 16px; font-weight: 600; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.song-card-artist { font-size: 13px; color: var(--text-dim); }
+.song-card-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
+.pill {
+  font-size: 11px; font-weight: 500;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 4px; padding: 2px 7px; color: var(--text-dim);
+  white-space: nowrap;
+}
+.pill-key {
+  font-size: 13px; font-weight: 700;
+  background: var(--chord-bg); border: 2px solid var(--chord);
+  border-radius: 8px; padding: 5px 12px; color: var(--chord);
+  white-space: nowrap; font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.5px;
+}
+.pill-beat {
+  font-size: 12px; font-weight: 700;
+  background: var(--surface2); border: 2px solid var(--border);
+  border-radius: 8px; padding: 5px 12px; color: var(--text);
+  white-space: nowrap; letter-spacing: 0.3px;
+}
+.no-results { text-align: center; padding: 48px 16px; color: var(--text-muted); }
+
+/* ── SONG VIEW ── */
+.song-page { max-width: 600px; margin: 0 auto; padding: 0 16px 80px; }
+.song-header { padding: 24px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+.song-title {
+  font-size: 32px; font-weight: 700; letter-spacing: -1px;
+  line-height: 1.1; margin-bottom: 6px;
+}
+.song-artist { font-size: 15px; color: var(--text-dim); margin-bottom: 16px; }
+.song-artist button { color: var(--chord); font-weight: 600; font-size: 15px; }
+.song-meta-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+/* ── CHORD SHEET ── */
+.chord-sheet-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.chord-sheet {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px; line-height: 2;
+  white-space: pre; display: block;
+  min-width: max-content;
+}
+.cs-line { display: block; }
+.cs-chord-line { display: block; }
+.cs-chord-name { color: var(--chord); font-weight: 600; }
+.cs-section {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--section); font-size: 12px;
+  font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  margin-top: 6px; margin-bottom: -4px;
+}
+.cs-lyric {
+  display: block;
+  font-family: 'Noto Sans Sinhala', monospace;
+  font-size: 15px; line-height: 1.8;
+  white-space: pre; color: var(--text);
+}
+.cs-meta-note {
+  display: block; font-size: 12px;
+  color: var(--text-muted); margin-bottom: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: italic; white-space: normal;
+}
+.cs-empty { display: block; height: 4px; }
+
+/* ── ADS ── */
+.ad-wrap { margin: 20px 0; }
+.ad-block {
+  border-radius: 10px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  background: var(--surface); border: 1px dashed var(--border);
+  color: var(--text-muted); font-size: 10px; letter-spacing: 0.8px;
+  text-transform: uppercase; font-weight: 500;
+}
+.ad-block-sm { height: 60px; }
+.ad-block-lg { height: 250px; }
+.ad-block-inner { font-size: 13px; color: var(--text-dim); }
+
+/* ── INLINE KEY GRID ── */
+.inline-keys-wrap { margin-bottom: 24px; }
+.inline-keys-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+  color: var(--text-muted); text-transform: uppercase; margin-bottom: 10px;
+}
+.inline-keys-grid {
+  display: grid; grid-template-columns: repeat(6, 44px); gap: 6px;
+}
+.ikey-btn {
+  width: 44px; height: 36px; padding: 0;
+  border-radius: 8px; font-size: 12px; font-weight: 600;
+  background: var(--surface); border: 1.5px solid var(--border);
+  color: var(--text); cursor: pointer; text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.1s; -webkit-tap-highlight-color: transparent;
+}
+.ikey-btn.active { background: #2563eb; border-color: #2563eb; color: #fff; }
+.ikey-btn:active { transform: scale(0.95); }
+
+/* ── MORE BY ARTIST ── */
+.more-section { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+.more-title { font-size: 12px; font-weight: 600; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+.more-list { display: flex; flex-direction: column; gap: 2px; }
+.more-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px; border-radius: 10px; cursor: pointer;
+  transition: background 0.1s; -webkit-tap-highlight-color: transparent;
+}
+.more-item:active { background: var(--surface); }
+.more-item.current { background: var(--chord-bg); }
+.more-item-title { font-size: 15px; font-weight: 600; }
+.more-item.current .more-item-title { color: var(--chord); }
+.more-item-meta { font-size: 12px; color: var(--text-muted); }
+
+/* ── ARTIST PAGE ── */
+.artist-page { max-width: 600px; margin: 0 auto; padding: 28px 16px 80px; }
+.artist-name { font-size: 32px; font-weight: 700; letter-spacing: -1px; margin-bottom: 4px; }
+.artist-count { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+.artist-list { display: flex; flex-direction: column; gap: 2px; }
+.artist-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; border-radius: 12px; cursor: pointer;
+  border: 1px solid transparent; transition: all 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+.artist-item:active { background: var(--surface); border-color: var(--border); }
+.artist-item-title { font-size: 16px; font-weight: 600; }
+.artist-item-meta { display: flex; gap: 6px; }
+
+/* ── BUY ME A COFFEE ── */
+.bmc-hero {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 16px; border-radius: 24px;
+  background: #FFDD00; color: #000;
+  font-size: 13px; font-weight: 700; text-decoration: none;
+  margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 32px 16px 40px;
+  margin-top: 40px;
+}
+.footer-inner {
+  max-width: 600px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 20px;
+}
+.footer-brand { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; }
+.footer-brand span { color: var(--chord); }
+.footer-tagline { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.footer-nav-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.footer-nav-col h4 {
+  font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px;
+}
+.footer-nav-col a {
+  display: block; font-size: 14px; color: var(--text-dim);
+  padding: 4px 0; transition: color 0.12s;
+}
+.footer-nav-col a:hover { color: var(--chord); }
+.footer-bottom {
+  border-top: 1px solid var(--border); padding-top: 16px;
+  display: flex; flex-wrap: wrap; gap: 8px;
+  align-items: center; justify-content: space-between;
+}
+.footer-copy { font-size: 12px; color: var(--text-muted); }
+.footer-legal { display: flex; gap: 16px; }
+.footer-legal a { font-size: 12px; color: var(--text-muted); transition: color 0.12s; }
+.footer-legal a:hover { color: var(--chord); }
+
+/* ── LEGAL PAGES ── */
+.legal-page { max-width: 600px; margin: 0 auto; padding: 32px 16px 80px; }
+.legal-page h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.8px; margin-bottom: 6px; }
+.legal-page .legal-date { font-size: 13px; color: var(--text-muted); margin-bottom: 32px; }
+.legal-page h2 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; }
+.legal-page p { font-size: 14px; line-height: 1.7; color: var(--text-dim); margin-bottom: 12px; }
+.legal-page ul { padding-left: 20px; margin-bottom: 12px; }
+.legal-page li { font-size: 14px; line-height: 1.7; color: var(--text-dim); margin-bottom: 4px; }
+.legal-page a { color: var(--chord); text-decoration: underline; }
+
+/* ── CONTACT FORM ── */
+.contact-form { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+.contact-form label { font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 5px; }
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%; background: var(--surface);
+  border: 1.5px solid var(--border); border-radius: 10px;
+  padding: 12px 14px; font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; color: var(--text); outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus { border-color: var(--chord); box-shadow: 0 0 0 3px var(--chord-bg); }
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.contact-form .submit-btn {
+  padding: 14px; border-radius: 10px; font-size: 15px; font-weight: 700;
+  background: var(--chord); color: #fff; border: none; cursor: pointer;
+  transition: opacity 0.15s;
+}
+.contact-form .submit-btn:active { opacity: 0.8; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+// ── Music utilities ──────────────────────────────────────────────────────────
+const SHARP = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const FLAT  = ['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'];
+
+function noteIdx(n) {
+  let i = SHARP.indexOf(n); if (i !== -1) return i;
+  return FLAT.indexOf(n);
+}
+function transposeNote(note, st) {
+  const useFl = note.includes('b') || note === 'F';
+  const arr = useFl ? FLAT : SHARP;
+  let i = arr.indexOf(note);
+  if (i === -1) { i = SHARP.indexOf(note); if (i===-1) return note; return SHARP[((i+st)%12+12)%12]; }
+  return arr[((i+st)%12+12)%12];
+}
+function transposeChord(chord, st) {
+  if (!st) return chord;
+  const m = chord.match(/^([A-G][#b]?)(.*)/);
+  if (!m) return chord;
+  return transposeNote(m[1], st) + m[2];
+}
+const CHORD_PAT = /^[A-G][#b]?(m|M|maj7?|min|dim|aug|sus[24]?|add[29]?)?[0-9]*(\/[A-G][#b]?)?$/;
+function isChordToken(tok) {
+  const t = tok.replace(/^[|]+/, '').replace(/[-|]+$/, '');
+  return t.length > 0 && t.length <= 9 && CHORD_PAT.test(t);
+}
+function isChordLine(line) {
+  const t = line.trim();
+  if (!t || t.startsWith('[')) return false;
+  const toks = t.split(/\s+/).filter(Boolean);
+  if (!toks.length) return false;
+  const ct = toks.filter(isChordToken).length;
+  return ct >= 1 && ct / toks.length >= 0.55;
+}
+const INLINE_CHORD_RE = /([A-G][#b]?(?:m|M|maj7?|min|dim|aug|sus[24]?|add[29]?)?[0-9]*(?:\/[A-G][#b]?)?)/g;
+
+function semitonesTo(fromKey, toNote) {
+  const fn = fromKey.match(/^([A-G][#b]?)/)?.[1];
+  if (!fn) return 0;
+  let fi = noteIdx(fn), ti = noteIdx(toNote);
+  if (fi === -1 || ti === -1) return 0;
+  let st = ((ti - fi) % 12 + 12) % 12;
+  if (st > 6) st -= 12;
+  return st;
+}
+function keyName(key, st) {
+  if (!st) return key;
+  const m = key.match(/^([A-G][#b]?)(m?)$/);
+  if (!m) return key;
+  return transposeNote(m[1], st) + m[2];
+}
+
+// ── Song data ────────────────────────────────────────────────────────────────
+const DIGASIYE = `Place the capo on 4th fret
+
+[Intro]
+|C-- F-- |
+|C- F- Am- G|
+
+C     F    C      F
+දිගාසියේ.. දිගාසියේ.. //
+
+[Verse]
+C                F
+කොපුල් තෙමා හිටි හැටියේ..
+C                  F
+ඒ අවිදා ගිය තරු පෑලේ..
+Dm7              G
+හීන මවාලා.. ඇත ගිය දන්..
+Gm       Bb        C
+මා මිය යායි හද ගස්මේ.. //
+
+C
+මායාවන් හැඟෙමි..
+F
+සෙයාවක් වත් නොදී..
+Dm7                C
+ඈගේ රූ මා ඇතින් විඳෙමි..
+C
+රූපයේ මන බන්ධනී..
+F
+ප්‍රේමයේ අනුරාගිනී..
+Dm7            C
+වේදනාවේ මා තනිවෙමි..
+
+[Chorus]
+C     F    Am7    Gsus4 G
+දිගාසියේ.. දිගාසියේ.. //
+
+|C- F- Am7- Gsus4-G|
+
+[Verse 2]
+C
+රූ අඳුන් ගල්වන්නියේ..
+F
+මා හැඟුම් රිදවන්නියේ..
+Dm7                C
+රූපයෙන් මන මා මතිවෙමි..
+C
+රාත්‍රියේ සඳවන් මුවේ..
+F
+නිල් නුවන් සිපගන්නෙමි..
+Dm7              C
+මේ සිහිනයේ මා නවතිමි..
+
+[Outro]
+C     F    Am7    Gsus4 G
+දිගාසියේ.. දිගාසියේ.. //
+
+C-- Dm7-- F-- Gsus4- G
+C-- F-- C-- F`;
+
+const ALOKAWARSHA = `[Verse]
+G         D
+ආලෝකවර්ෂ වෙලා..
+Em          C
+හිතට ඇවිත්..
+G         D
+සෙනෙහස ගඟ..
+Em          C
+ඔබ පෙන්නමු..
+
+[Chorus]
+G    D    Em   C
+ආලෝකවර්ෂ.. ආලෝකවර්ෂ..
+G    D    Em   C
+හිත ඉගෙනගන්න.. පෙම් සිතුවිලි..`;
+
+const PANDAMA = `Place the capo on 2nd fret
+
+[Verse]
+Am         G
+පන්දම නොවෙලා..
+F            C
+රාත්‍රියේ යන..
+Am         G
+ආදර ගිනි..
+F            C
+මාමත් ළඟ..
+
+[Chorus]
+C    G    Am   F
+පන්දම.. පන්දම..
+C    G    Am   F
+හිතේ දැල්වෙන.. ප්‍රේමය..`;
+
+const SANDAGANAWA = `[Verse]
+G    Em
+සඳගනවා නුඹ..
+C     D
+හිතේ නොවනෙ..
+G    Em
+ඔය හිනාව..
+C     D
+මගේ ජීවිතේ..
+
+[Chorus]
+G    D    Em   C
+සඳගනවා.. සඳගනවා..
+G    D    Em   C
+ආලේ ගිලිහෙන.. රෑ..`;
+
+const SONGS = [
+  { id:1,  title:'දිගාසියේ',         titleRoman:'Digasiye',          artist:'Dhanithi Sri',          key:'E',  beat:'4/4', capo:4, content:DIGASIYE },
+  { id:2,  title:'ආලෝකවර්ෂ',        titleRoman:'Alokawarsha',       artist:'Dhanithi Sri',          key:'G',  beat:'4/4', capo:0, content:ALOKAWARSHA },
+  { id:3,  title:'අප්‍රකාශිත',      titleRoman:'Aprakashitha',      artist:'Dhanithi Sri',          key:'Am', beat:'3/4', capo:0, content:`[Verse]\nAm   G\nඅප්‍රකාශිත..\nF    C\nසනවෙ හිතේ..\n\n[Chorus]\nC    G    Am   F\nඅප්‍රකාශිත.. අපි සොයමු..` },
+  { id:4,  title:'ලෝක සිතියම',      titleRoman:'Loka Sithiyama',    artist:'Dhanithi Sri',          key:'D',  beat:'4/4', capo:0, content:`[Verse]\nD       A\nලෝක සිතියම..\nBm      G\nඔබ මගේ..\n\n[Chorus]\nD    A    Bm   G\nසිතියම.. සිතියම..` },
+  { id:5,  title:'පන්දම',            titleRoman:'Pandama',           artist:'Dhanithi Sri',          key:'C',  beat:'4/4', capo:2, content:PANDAMA },
+  { id:6,  title:'සඳගනවා',           titleRoman:'Sandaganawa',       artist:'Dhanithi Sri',          key:'G',  beat:'4/4', capo:0, content:SANDAGANAWA },
+  { id:7,  title:'ඔබේ වාගේ කෙනෙක්', titleRoman:'Obe Wage Kenek',    artist:'Bathiya & Santhush',    key:'C',  beat:'4/4', capo:0, content:`[Verse]\nC           G\nඔබේ වාගේ කෙනෙක්..\nAm          F\nමගේ ළිය නැති..\n\n[Chorus]\nC    G    Am   F\nඔබේ වාගේ.. ඔබේ වාගේ..` },
+  { id:8,  title:'හදවත පායන',        titleRoman:'Hadawatha Payana',  artist:'Bathiya & Santhush',    key:'G',  beat:'4/4', capo:0, content:`[Verse]\nG    D\nහදවත පායන..\nEm   C\nහිතේ..\n\n[Chorus]\nG    D    Em   C\nපායන.. පායන..` },
+  { id:9,  title:'සුදු අරලිය',       titleRoman:'Sudu Araliya',      artist:'Rookantha Gunathilake', key:'F',  beat:'4/4', capo:1, content:`Place the capo on 1st fret\n\n[Verse]\nF         C\nසුදු අරලිය..\nDm        Bb\nපේ‍මේ සුවඳ..\n\n[Chorus]\nF    C    Dm   Bb\nඅරලිය.. අරලිය..` },
+  { id:10, title:'සඳ එළිය',          titleRoman:'Sanda Eliya',       artist:'Rookantha Gunathilake', key:'D',  beat:'3/4', capo:0, content:`[Verse]\nD       A\nසඳ එළිය..\nBm      G\nරාත්‍රිය..\n\n[Chorus]\nD    A    Bm   G\nඑළිය.. එළිය..` },
+  { id:11, title:'ආදරේ නම්',         titleRoman:'Adare Nam',         artist:'Sanath Nandasiri',      key:'C',  beat:'4/4', capo:0, content:`[Verse]\nC       G\nආදරේ නම්..\nAm      F\nහිතේ..\n\n[Chorus]\nC    G    Am   F\nආදරේ.. ආදරේ..` },
+];
+
+// ── ChordSheet ───────────────────────────────────────────────────────────────
+function ChordLine({ line, semitones }) {
+  const transposed = semitones
+    ? line.replace(new RegExp(INLINE_CHORD_RE.source,'g'), m => isChordToken(m) ? transposeChord(m, semitones) : m)
+    : line;
+  const parts = [];
+  let last = 0;
+  const re = new RegExp(INLINE_CHORD_RE.source, 'g');
+  let m;
+  while ((m = re.exec(transposed)) !== null) {
+    if (!isChordToken(m[1])) continue;
+    if (m.index > last) parts.push(<span key={`t${last}`}>{transposed.slice(last, m.index)}</span>);
+    parts.push(<span key={`c${m.index}`} className="cs-chord-name">{m[1]}</span>);
+    last = m.index + m[0].length;
+  }
+  if (last < transposed.length) parts.push(<span key="tail">{transposed.slice(last)}</span>);
+  return <span className="cs-chord-line">{parts}</span>;
+}
+
+function ChordSheet({ content, semitones }) {
+  return (
+    <div className="chord-sheet-wrap">
+      <div className="chord-sheet">
+        {content.split('\n').map((line, i) => {
+          const t = line.trim();
+          if (!t) return <span key={i} className="cs-empty" />;
+          if (t.startsWith('[') && t.endsWith(']'))
+            return <span key={i} className="cs-section">{t}</span>;
+          if (t.startsWith('Place the capo') || t.startsWith('Original Key'))
+            return <span key={i} className="cs-meta-note">{t}</span>;
+          if (isChordLine(line))
+            return <ChordLine key={i} line={line} semitones={semitones} />;
+          return <span key={i} className="cs-lyric">{line}</span>;
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ── Inline Key Grid ──────────────────────────────────────────────────────────
+const ALL_KEYS = ['Ab','A','A#','Bb','B','C','C#','Db','D','D#','Eb','E','F','F#','Gb','G','G#'];
+
+function InlineKeyGrid({ song, semitones, selectedKey, onPick }) {
+  const isMinor = song.key.endsWith('m') && !song.key.endsWith('maj');
+  const suffix = isMinor ? 'm' : '';
+  return (
+    <div className="inline-keys-wrap">
+      <div className="inline-keys-label">Transpose Key</div>
+      <div className="inline-keys-grid">
+        {ALL_KEYS.map(k => (
+          <button
+            key={k}
+            className={`ikey-btn ${k === selectedKey ? 'active' : ''}`}
+            onClick={() => onPick(k, semitonesTo(song.key, k))}
+          >{k}{suffix}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── Theme Toggle ─────────────────────────────────────────────────────────────
+const SunSVG = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+    <circle cx="12" cy="12" r="5"/>
+    <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  </svg>
+);
+const MoonSVG = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+);
+
+function ModeToggle({ theme, toggleTheme }) {
+  const isDark = theme === 'dark';
+  return (
+    <div className="toggle-sw-wrap" onClick={toggleTheme} role="button" aria-label="Toggle dark mode">
+      <span className="toggle-sw-icon" style={{color: isDark ? 'var(--text-muted)' : '#f59e0b'}}><SunSVG /></span>
+      <div className={`toggle-sw-track ${isDark ? 'on' : ''}`}>
+        <div className="toggle-sw-thumb" />
+      </div>
+      <span className="toggle-sw-icon" style={{color: isDark ? '#a78bfa' : 'var(--text-muted)'}}><MoonSVG /></span>
+    </div>
+  );
+}
+
+// ── Nav ──────────────────────────────────────────────────────────────────────
+function Nav({ theme, toggleTheme, onHome, showBack }) {
+  return (
+    <nav className="nav">
+      {showBack && <button className="nav-back" onClick={onHome}>←</button>}
+      <div className="nav-logo" onClick={onHome}>Cho<span>r</span>ads</div>
+      <div className="nav-spacer" />
+      <ModeToggle theme={theme} toggleTheme={toggleTheme} />
+    </nav>
+  );
+}
+
+// ── Ad Block ─────────────────────────────────────────────────────────────────
+function AdBlock({ size }) {
+  return (
+    <div className={`ad-block ad-block-${size}`}>
+      <div className="ad-block-inner">📢</div>
+      <div>Advertisement</div>
+    </div>
+  );
+}
+
+// ── BMC Banner ───────────────────────────────────────────────────────────────
+function BmcBanner() {
+  return (
+    <a href="https://buymeacoffee.com/chroads" target="_blank" rel="noreferrer"
+      style={{
+        display:'flex', alignItems:'center', gap:14,
+        padding:'12px 16px', background:'#FFDD00',
+        borderRadius:12, textDecoration:'none', marginBottom:20,
+        boxShadow:'0 2px 10px rgba(0,0,0,0.08)'
+      }}>
+      <span style={{fontSize:26, lineHeight:1}}>☕</span>
+      <div style={{flex:1}}>
+        <div style={{fontWeight:700, color:'#1a1200', fontSize:14, lineHeight:1.3}}>Enjoying Chroads?</div>
+        <div style={{fontSize:12, color:'#5a4200', marginTop:2}}>Support us with a coffee!</div>
+      </div>
+      <span style={{fontSize:12, fontWeight:700, color:'#1a1200', whiteSpace:'nowrap'}}>Support →</span>
+    </a>
+  );
+}
+
+// ── Home Page ────────────────────────────────────────────────────────────────
+function HomePage({ songs, onSelectSong, onSelectArtist }) {
+  const [q, setQ] = useState('');
+  const results = q.trim()
+    ? songs.filter(s =>
+        s.title.includes(q) ||
+        s.titleRoman.toLowerCase().includes(q.toLowerCase()) ||
+        s.artist.toLowerCase().includes(q.toLowerCase()))
+    : songs;
+
+  return (
+    <div className="home">
+      <div className="home-hero">
+        <a href="https://buymeacoffee.com/chroads" target="_blank" rel="noreferrer" className="bmc-hero">☕ Buy me a coffee</a>
+        <div className="home-title">Cho<span>r</span>ads</div>
+        <div className="home-sub">Sinhala guitar chords &amp; lyrics</div>
+        <div className="home-search-wrap">
+          <span className="home-search-icon">⌕</span>
+          <input
+            className="home-search"
+            placeholder="සොයන්න · Search…"
+            value={q}
+            onChange={e => setQ(e.target.value)}
+            autoComplete="off"
+          />
+        </div>
+      </div>
+      <div className="section-label">
+        {q.trim() ? `${results.length} result${results.length!==1?'s':''}` : `${songs.length} songs`}
+      </div>
+      {results.length ? (
+        <div className="songs-list">
+          {results.map(s => (
+            <div key={s.id} className="song-card" onClick={() => onSelectSong(s.id)}>
+              <div className="song-card-left">
+                <div className="song-card-title">{s.titleRoman}</div>
+                <div className="song-card-artist">{s.artist}</div>
+              </div>
+              <div className="song-card-right">
+                <span className="pill">Key: {s.key}</span>
+                {s.capo > 0 && <span className="pill">Capo {s.capo}</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="no-results">No songs found for "{q}"</div>
+      )}
+    </div>
+  );
+}
+
+// ── Song View ────────────────────────────────────────────────────────────────
+function SongView({ song, songs, onSelectSong, onSelectArtist }) {
+  const origRoot = song.key.match(/^([A-G][#b]?)/)?.[1] || song.key;
+  const [semitones, setSemitones] = useState(() => { const v=localStorage.getItem(`tr_${song.id}`); return v?parseInt(v):0; });
+  const [selectedKey, setSelectedKey] = useState(() => localStorage.getItem(`sk_${song.id}`) || origRoot);
+
+  const handleKeyPick = (k, st) => { setSelectedKey(k); setSemitones(st); };
+
+  useEffect(() => { localStorage.setItem(`tr_${song.id}`, semitones); }, [semitones, song.id]);
+  useEffect(() => { localStorage.setItem(`sk_${song.id}`, selectedKey); }, [selectedKey, song.id]);
+
+  const artistSongs = songs.filter(s => s.artist === song.artist);
+
+  return (
+    <div className="song-page">
+      <div className="song-header">
+        <div className="song-title">{song.titleRoman}</div>
+        <div className="song-artist">
+          <button onClick={() => onSelectArtist(song.artist)}>{song.artist}</button>
+        </div>
+        <div className="song-meta-row">
+          <span className="pill-key">⬧ {song.key}</span>
+          <span className="pill-beat">{song.beat}</span>
+          {song.capo > 0 && <span className="pill">Capo {song.capo}</span>}
+        </div>
+      </div>
+
+      <InlineKeyGrid song={song} semitones={semitones} selectedKey={selectedKey} onPick={handleKeyPick} />
+
+      <BmcBanner />
+
+      <ChordSheet content={song.content} semitones={semitones} />
+
+      <div className="ad-wrap"><AdBlock size="lg" /></div>
+
+      {artistSongs.length > 1 && (
+        <div className="more-section">
+          <div className="more-title">More by {song.artist}</div>
+          <div className="more-list">
+            {artistSongs.map(s => (
+              <div
+                key={s.id}
+                className={`more-item ${s.id===song.id?'current':''}`}
+                onClick={() => s.id !== song.id && onSelectSong(s.id)}
+              >
+                <div className="more-item-title">{s.titleRoman}</div>
+                <span className="more-item-meta">Key: {s.key}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div style={{margin:'20px 0'}}><AdBlock size="sm" /></div>
+    </div>
+  );
+}
+
+// ── Artist Page ───────────────────────────────────────────────────────────────
+function ArtistPage({ artistName, songs, onSelectSong }) {
+  const artistSongs = songs.filter(s => s.artist === artistName);
+  return (
+    <div className="artist-page">
+      <div className="artist-name">{artistName}</div>
+      <div className="artist-count">{artistSongs.length} songs</div>
+      <div className="artist-list">
+        {artistSongs.map(s => (
+          <div key={s.id} className="artist-item" onClick={() => onSelectSong(s.id)}>
+            <div>
+              <div className="artist-item-title">{s.titleRoman}</div>
+            </div>
+            <div className="artist-item-meta">
+              <span className="pill">Key: {s.key}</span>
+              {s.capo > 0 && <span className="pill">Capo {s.capo}</span>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── Legal Pages ───────────────────────────────────────────────────────────────
+function PrivacyPage() {
+  return (
+    <div className="legal-page">
+      <h1>Privacy Policy</h1>
+      <p className="legal-date">Last updated: April 2025</p>
+      <p>Chroads ("we", "us", or "our") operates the Chroads website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our service.</p>
+      <h2>Information We Collect</h2>
+      <p>We do not collect personally identifiable information directly. However, third-party services we use (such as Google AdSense) may collect data as described in their own privacy policies.</p>
+      <h2>Cookies</h2>
+      <p>We use local browser storage to save your theme preference and last-viewed song. Third-party advertisers (Google AdSense) may set cookies to serve personalized ads based on your prior visits to our website and other sites on the Internet.</p>
+      <h2>Google AdSense</h2>
+      <p>We use Google AdSense to display advertisements. Google uses cookies to serve ads based on your visit to our site and other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noreferrer">Google Ads Settings</a>.</p>
+      <h2>Links to Other Sites</h2>
+      <p>Our service may contain links to other sites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+      <h2>Changes to This Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us via the <a href="#contact">Contact</a> page.</p>
+    </div>
+  );
+}
+
+function TermsPage() {
+  return (
+    <div className="legal-page">
+      <h1>Terms and Conditions</h1>
+      <p className="legal-date">Last updated: April 2025</p>
+      <p>Please read these Terms and Conditions carefully before using the Chroads website.</p>
+      <h2>Use of the Service</h2>
+      <p>Chroads is a free resource providing guitar chord charts and lyrics for Sinhala songs. By accessing this website, you agree to these terms.</p>
+      <ul>
+        <li>You may use the chord charts for personal, non-commercial practice.</li>
+        <li>You may not copy, reproduce, or redistribute our content without permission.</li>
+        <li>You may not use automated tools to scrape or download our content in bulk.</li>
+      </ul>
+      <h2>Intellectual Property</h2>
+      <p>Song lyrics and compositions are the property of their respective copyright holders. Chord charts are provided for educational purposes under fair use. If you are a rights holder and wish to have content removed, please contact us.</p>
+      <h2>Disclaimer</h2>
+      <p>The chord charts on Chroads are provided "as is" without warranty of any kind. We do not guarantee the accuracy of any chord arrangement. Use at your own discretion.</p>
+      <h2>Advertising</h2>
+      <p>This site displays advertisements served by Google AdSense. We are not responsible for the content of those advertisements.</p>
+      <h2>Changes to Terms</h2>
+      <p>We reserve the right to modify these terms at any time. Continued use of the site after any changes constitutes acceptance of the new terms.</p>
+      <h2>Contact Us</h2>
+      <p>Questions about these Terms? Reach us via the <a href="#contact">Contact</a> page.</p>
+    </div>
+  );
+}
+
+function ContactPage() {
+  const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({ name:'', email:'', subject:'general', message:'' });
+  const update = k => e => setForm(f => ({...f, [k]: e.target.value}));
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    setSent(true);
+  };
+
+  if (sent) return (
+    <div className="legal-page" style={{textAlign:'center', paddingTop:60}}>
+      <div style={{fontSize:40, marginBottom:12}}>✅</div>
+      <h1 style={{marginBottom:12}}>Message Sent!</h1>
+      <p>Thanks for reaching out. We'll get back to you soon.</p>
+    </div>
+  );
+
+  return (
+    <div className="legal-page">
+      <h1>Contact</h1>
+      <p className="legal-date">We'd love to hear from you</p>
+      <p>Have a song request, found an error in a chord chart, or want to submit a new song? Drop us a message below.</p>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div>
+          <label>Your Name</label>
+          <input type="text" placeholder="Amal Perera" value={form.name} onChange={update('name')} required />
+        </div>
+        <div>
+          <label>Email Address</label>
+          <input type="email" placeholder="amal@example.com" value={form.email} onChange={update('email')} required />
+        </div>
+        <div>
+          <label>Subject</label>
+          <select value={form.subject} onChange={update('subject')}>
+            <option value="general">General Inquiry</option>
+            <option value="song-request">Song Request</option>
+            <option value="submit-song">Submit a Song</option>
+            <option value="correction">Chord Correction</option>
+            <option value="copyright">Copyright Issue</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea placeholder="Write your message here…" value={form.message} onChange={update('message')} required />
+        </div>
+        <button type="submit" className="submit-btn">Send Message</button>
+      </form>
+    </div>
+  );
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+function Footer({ onNav }) {
+  return (
+    <footer className="footer">
+      <div className="footer-inner">
+        <div>
+          <div className="footer-brand">Cho<span>r</span>ads</div>
+          <div className="footer-tagline">Sinhala guitar chords &amp; lyrics</div>
+        </div>
+        <div className="footer-nav-grid">
+          <div className="footer-nav-col">
+            <h4>Explore</h4>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('home'); }}>All Songs</a>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('contact'); }}>Submit a Song</a>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('contact'); }}>Request a Song</a>
+          </div>
+          <div className="footer-nav-col">
+            <h4>Support</h4>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('contact'); }}>Contact Us</a>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('privacy'); }}>Privacy Policy</a>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('terms'); }}>Terms &amp; Conditions</a>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <span className="footer-copy">© 2025 Chroads. All rights reserved.</span>
+          <div className="footer-legal">
+            <a href="#" onClick={e => { e.preventDefault(); onNav('privacy'); }}>Privacy</a>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('terms'); }}>Terms</a>
+            <a href="#" onClick={e => { e.preventDefault(); onNav('contact'); }}>Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+// ── App ───────────────────────────────────────────────────────────────────────
+function App() {
+  const [theme,  setTheme]  = useState(() => localStorage.getItem('ch_theme') || 'light');
+  const [view,   setView]   = useState('home');
+  const [songId, setSongId] = useState(null);
+  const [artist, setArtist] = useState(null);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('ch_theme', theme);
+  }, [theme]);
+
+  const go = (v, extras={}) => {
+    if (extras.songId !== undefined) setSongId(extras.songId);
+    if (extras.artist !== undefined) setArtist(extras.artist);
+    setView(v);
+    window.scrollTo(0, 0);
+  };
+
+  const song = SONGS.find(s => s.id === songId);
+  const isHome = view === 'home';
+  const showBack = !isHome;
+
+  return (
+    <>
+      <Nav
+        theme={theme}
+        toggleTheme={() => setTheme(t => t==='dark'?'light':'dark')}
+        onHome={() => go('home')}
+        showBack={showBack}
+      />
+      {view === 'home' && (
+        <HomePage songs={SONGS} onSelectSong={id => go('song',{songId:id})} onSelectArtist={a => go('artist',{artist:a})} />
+      )}
+      {view === 'song' && song && (
+        <SongView song={song} songs={SONGS} onSelectSong={id => go('song',{songId:id})} onSelectArtist={a => go('artist',{artist:a})} />
+      )}
+      {view === 'artist' && (
+        <ArtistPage artistName={artist} songs={SONGS} onSelectSong={id => go('song',{songId:id})} />
+      )}
+      {view === 'privacy'  && <PrivacyPage />}
+      {view === 'terms'    && <TermsPage />}
+      {view === 'contact'  && <ContactPage />}
+      <Footer onNav={v => go(v)} />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
