@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Chroads — Sinhala Guitar Chords</title>
+<title>Sinhala Chroads — Guitar Chords & Lyrics</title>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL1GPR61JG"></script>
 <script>
@@ -110,20 +110,20 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ── HOME ── */
-.home { max-width: 600px; margin: 0 auto; padding: 40px 16px 80px; }
-.home-hero { margin-bottom: 40px; }
+.home { max-width: 600px; margin: 0 auto; padding: 40px 16px 40px; }
+.home-hero { margin-bottom: 40px; text-align: center; }
 .home-title {
-  font-size: 48px; font-weight: 700; letter-spacing: -2px; line-height: 1;
-  margin-bottom: 6px;
+  font-size: 42px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.05;
+  margin-bottom: 10px;
 }
 .home-title span { color: var(--chord); }
-.home-sub { color: var(--text-muted); font-size: 14px; margin-bottom: 28px; }
-.home-search-wrap { position: relative; }
+.home-sub { color: var(--text-muted); font-size: 15px; margin-bottom: 28px; line-height: 1.5; }
+.home-search-wrap { position: relative; text-align: left; }
 .home-search {
   width: 100%;
   background: var(--surface);
   border: 1.5px solid var(--border); border-radius: 12px;
-  padding: 14px 16px 14px 44px;
+  padding: 15px 16px 15px 52px;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px; color: var(--text); outline: none;
   transition: border-color 0.15s, box-shadow 0.15s;
@@ -132,7 +132,8 @@ a { color: inherit; text-decoration: none; }
 .home-search::placeholder { color: var(--text-muted); }
 .home-search-icon {
   position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
-  color: var(--text-muted); font-size: 18px; pointer-events: none;
+  color: var(--chord); pointer-events: none;
+  display: flex; align-items: center;
 }
 .section-label {
   font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
@@ -292,7 +293,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--surface);
   border-top: 1px solid var(--border);
   padding: 32px 16px 40px;
-  margin-top: 40px;
+  margin-top: 0;
 }
 .footer-inner {
   max-width: 600px; margin: 0 auto;
@@ -640,7 +641,7 @@ function Nav({ theme, toggleTheme, onHome, showBack }) {
   return (
     <nav className="nav">
       {showBack && <button className="nav-back" onClick={onHome}>←</button>}
-      <div className="nav-logo" onClick={onHome}>Cho<span>r</span>ads</div>
+      <div className="nav-logo" onClick={onHome}>Sinhala Ch<span>r</span>oads</div>
       <div className="nav-spacer" />
       <ModeToggle theme={theme} toggleTheme={toggleTheme} />
     </nav>
@@ -671,7 +672,7 @@ function BmcBanner() {
       }}>
       <span style={{fontSize:26, lineHeight:1}}>☕</span>
       <div style={{flex:1}}>
-        <div style={{fontWeight:700, color:'#1a1200', fontSize:14, lineHeight:1.3}}>Enjoying Chroads?</div>
+        <div style={{fontWeight:700, color:'#1a1200', fontSize:14, lineHeight:1.3}}>Enjoying Sinhala Chroads?</div>
         <div style={{fontSize:12, color:'#5a4200', marginTop:2}}>Support us with a coffee!</div>
       </div>
       <span style={{fontSize:12, fontWeight:700, color:'#1a1200', whiteSpace:'nowrap'}}>Support →</span>
@@ -692,19 +693,23 @@ function HomePage({ songs, onSelectSong, onSelectArtist }) {
   return (
     <div className="home">
       <div className="home-hero">
-        {SITE_CONFIG.showBmc && <a href={SITE_CONFIG.bmcUrl} target="_blank" rel="noreferrer" className="bmc-hero">☕ Buy me a coffee</a>}
-        <div className="home-title">Cho<span>r</span>ads</div>
-        <div className="home-sub">Sinhala guitar chords &amp; lyrics</div>
+        <div className="home-title">Sinhala Ch<span>r</span>oads</div>
+        <div className="home-sub">Your go-to place for Sinhala guitar chord charts.<br/>Pick a song, grab your guitar, and play.</div>
         <div className="home-search-wrap">
-          <span className="home-search-icon">⌕</span>
+          <span className="home-search-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </span>
           <input
             className="home-search"
-            placeholder="සොයන්න · Search…"
+            placeholder="Search songs or artists…"
             value={q}
             onChange={e => setQ(e.target.value)}
             autoComplete="off"
           />
         </div>
+        <div style={{marginTop:20}}><BmcBanner /></div>
       </div>
       <div className="section-label">
         {q.trim() ? `${results.length} result${results.length!==1?'s':''}` : `${songs.length} songs`}
@@ -922,8 +927,8 @@ function Footer({ onNav }) {
     <footer className="footer">
       <div className="footer-inner">
         <div>
-          <div className="footer-brand">Cho<span>r</span>ads</div>
-          <div className="footer-tagline">Sinhala guitar chords &amp; lyrics</div>
+          <div className="footer-brand">Sinhala Ch<span>r</span>oads</div>
+          <div className="footer-tagline">Your go-to place for Sinhala guitar chord charts</div>
         </div>
         <div className="footer-nav-grid">
           <div className="footer-nav-col">
