@@ -72,6 +72,34 @@ window.ARTISTS_DATA = {
     description: 'Rookantha Gunathilaka is one of Sri Lanka\'s most celebrated singers, known for his smooth, expressive voice and deeply romantic Sinhala songs. Dawasak Daa is among his most beloved classics. Explore free and accurate Sinhala guitar chord charts for Rookantha Gunathilaka songs on Sinhala Chroads.',
   },
 
+  'Dasun Shanaka': {
+    description: 'Dasun Shanaka is one of Sri Lanka\'s most popular contemporary singers, celebrated for his smooth voice and emotionally resonant Sinhala songs. Adare Pawasala is one of his most beloved hits and a favourite for guitarists. Find free Sinhala guitar chord charts for Dasun Shanaka songs on Sinhala Chroads.',
+  },
+
+  'Bathiya and Santhush': {
+    description: 'Bathiya and Santhush (B&S) are Sri Lanka\'s iconic pop duo, known for catchy, romantic Sinhala songs that have defined a generation. Unmadani is one of their most iconic and widely played songs on guitar. Explore free Sinhala guitar chord charts for Bathiya and Santhush songs here.',
+  },
+
+  'Vijaya Kumarathunga': {
+    description: 'Vijaya Kumarathunga was a legendary Sri Lankan actor and singer whose powerful voice and patriotic Sinhala songs made him a national icon. Ganga Addara remains one of the most loved and searched Sinhala guitar chord sheets. Find free Sinhala guitar chords for Vijaya Kumarathunga songs here.',
+  },
+
+  'T.M. Jayarathna': {
+    description: 'T.M. Jayarathna is a celebrated Sri Lankan classical and folk singer known for his expressive voice and deeply emotional Sinhala songs. Sithin Ma Nosalee is one of his most iconic songs and a favourite for guitarists. Find free Sinhala guitar chord charts for T.M. Jayarathna songs on Sinhala Chroads.',
+  },
+
+  'H.R. Jothipala': {
+    description: 'H.R. Jothipala is a legendary Sri Lankan vocalist celebrated for his unique voice and timeless Sinhala pop and folk songs. Me Jeewanaye is among his most cherished and widely played songs. Explore free Sinhala guitar chord charts for H.R. Jothipala songs on Sinhala Chroads.',
+  },
+
+  'Amaradeva': {
+    description: 'Amaradeva (W.D. Amaradeva) is the most revered figure in Sri Lankan music, a National Living Treasure whose life\'s work has shaped Sinhala classical, folk and devotional music for decades. Nim Him Sewwa and Aradana are among his most celebrated songs. Find free Sinhala guitar chord charts for Amaradeva songs here.',
+  },
+
+  'Athula Adhikari': {
+    description: 'Athula Adhikari is a popular Sri Lankan singer known for his romantic, melodic Sinhala songs that resonate with listeners of all ages. Hitha Assata Heena Godak is one of his most beloved hits. Discover free and accurate Sinhala guitar chord charts for Athula Adhikari songs on Sinhala Chroads.',
+  },
+
 };
 
 // ── Song data ─────────────────────────────────────────────────────────────────
@@ -1066,6 +1094,652 @@ Ab    F#
 සිතුවම් දෝ.... මා දුටුවේ
 Ab    Eb    Ab
 සැබැහින් දෝ... ඔබ දුටුවේ`
+  },
+
+  {
+    id: 21,
+    titleRoman: 'Adare Pawasala',
+    titleSi:    'ආදරේ පාසල',
+    artist:     'Dasun Shanaka',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Adare Pawasala (ආදරේ පාසල) by Dasun Shanaka is a heartfelt Sinhala love song. Guitar chords in G — uses G, Em, C, D, Gsus2, Em7, Cadd9, F#m. A popular contemporary Sinhala ballad loved by guitarists.',
+    content:
+`[Intro]
+|Gsus2 |Em7 |Cadd9 |Dsus2 |
+
+[Chorus]
+G   Em   C   D
+G   C   D   G
+C   D   G   F#m   Em
+
+[Verse 1]
+G   Em   C   D
+G   Em   C   D
+C   D   B   G
+
+[Verse 2]
+C   D   Cm   G
+G   Em   C   D
+G   Em   C   D`
+  },
+
+  {
+    id: 22,
+    titleRoman: 'Unmadani',
+    titleSi:    'උන්මාදිනී',
+    artist:     'Bathiya and Santhush',
+    key:        'C',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Unmadani (උන්මාදිනී) by Bathiya and Santhush is one of the most iconic Sinhala pop songs ever made. Guitar chords in C — uses C, Dm, Em, Am, F, G. A must-know for any Sinhala guitarist.',
+    content:
+`[Chorus]
+C   Dm
+G   C
+Dm
+G   C
+Dm
+F   G
+
+[Verse 1]
+C   Dm   Em   Am
+C   Dm   Em   G   Am
+F   C
+Dm   G
+
+[Verse 2]
+C   Dm   Em   Am
+C   Dm   Em   G   Am
+F   C
+Dm   G`
+  },
+
+  {
+    id: 23,
+    titleRoman: 'Mal Mitak Thiyan',
+    titleSi:    'මල් මිටක් තියා',
+    artist:     'Kasun Kalhara',
+    key:        'Am',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Mal Mitak Thiyan (මල් මිටක් තියා) by Kasun Kalhara is a poetic Sinhala romantic song. Guitar chords in Am — uses Am, G, F, Em, C, Dm. A beautiful song for guitarists of all levels.',
+    content:
+`[Intro]
+Am   G   Am
+F   Em   C
+Em   C   Am
+
+[Chorus]
+Am   C
+Am   F   G   Em
+G   Dm   G
+Am   F   Dm   G   Am
+
+[Verse 1]
+Am   Dm   G
+Am   F   Dm   G   Am
+Am   G   Dm   G
+F   Em
+Dm   G   Am   F   G   Am
+
+[Verse 2]
+Am   Dm   G
+Am   F   Dm   G   Am
+Am   G   Dm   G
+F   Em
+Dm   G   Am   F   G   Am`
+  },
+
+  {
+    id: 24,
+    titleRoman: 'Ganga Addara',
+    titleSi:    'ගඟ අද්දර',
+    artist:     'Vijaya Kumarathunga',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Ganga Addara (ගඟ අද්දර) by Vijaya Kumarathunga is a beloved Sinhala folk-pop classic. Guitar chords in G — uses G, G7, C, D, D7. A timeless song from the legendary Sri Lankan icon.',
+    content:
+`[Verse 1]
+G
+G7   C
+D7   G
+
+[Chorus]
+G   D
+G
+C   D
+D7   G
+C   G
+D   D7   G
+
+[Verse 2]
+G
+G7   C
+D7   G`
+  },
+
+  {
+    id: 25,
+    titleRoman: 'Thawa Dawasak Hamu Wee Imu Me Bawe',
+    titleSi:    'තව දවසක් හමු වී ඉමු මේ භවේ',
+    artist:     'Keerthi Pasquel',
+    key:        'E',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Thawa Dawasak Hamu Wee Imu Me Bawe (තව දවසක් හමු වී ඉමු මේ භවේ) by Keerthi Pasquel is a deeply romantic Sinhala song. Guitar chords in E — uses E, F#m, C#m, A, B, Abm. A classic from the celebrated Sri Lankan singer.',
+    content:
+`[Intro]
+E
+F#m   C#m
+A   E
+
+[Chorus]
+E   F#m   A   E
+E   F#m   A   E
+C#m   Abm   F#m   B
+F#m   A   E
+
+[Verse 1]
+E   F#m   B   Abm
+C#m
+F#m   B   Abm   C#m   F#m   A   B
+
+[Verse 2]
+E   F#m   B   Abm
+C#m
+F#m   B   Abm   C#m   F#m   A   B`
+  },
+
+  {
+    id: 26,
+    titleRoman: 'Liyathambara',
+    titleSi:    'ලියතඹරා',
+    artist:     'Athma Liyanage',
+    key:        'Dm',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Liyathambara (ලියතඹරා) by Athma Liyanage is a hauntingly beautiful Sinhala song. Guitar chords in Dm — uses Dm, F, C, Bb. One of the most played Sinhala songs by the gifted singer-songwriter.',
+    content:
+`[Intro]
+|Dm |C |Dm |C |
+
+[Chorus]
+Dm   F   C
+Bb   Dm
+C   Dm
+C   Dm
+
+[Verse 1]
+Dm   F   C
+Bb   Dm
+F   C
+Bb   Dm
+
+[Verse 2]
+Dm   F   C
+Bb   Dm
+F   C
+Bb   Dm`
+  },
+
+  {
+    id: 27,
+    titleRoman: 'Adara Mal Wala',
+    titleSi:    'ආදර මල් වළා',
+    artist:     'Kasun Kalhara',
+    key:        'Dm',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Adara Mal Wala (ආදර මල් වළා) by Kasun Kalhara is a deeply lyrical Sinhala song. Guitar chords in Dm — uses Dm, Gm, Bb, F, Am, C. A beautiful track from the versatile Sri Lankan singer-songwriter.',
+    content:
+`[Intro]
+Dm   Bb   Dm   Am
+Dm   Bb   F
+Am   Dm
+Am   Dm
+Bb   Dm
+
+[Verse 1]
+Dm   Gm   C   Dm
+C   Dm   F
+Bb   Gm   C   Dm   Bb   Dm
+Gm   C   Dm
+C   Dm   F
+Bb   Gm   C   Dm
+
+[Verse 2]
+F   C   Dm
+F   Gm   C   Am   Dm   Bb   Dm
+Bb
+Am   Dm   Am
+C   Am   Dm
+
+[Verse 3]
+Dm   Gm   C   Dm
+C   Dm   F
+Bb   Gm   C   Dm   Bb   Dm
+Gm   C   Dm`
+  },
+
+  {
+    id: 28,
+    titleRoman: 'Sihina Lowak Dutuwa',
+    titleSi:    'සිහිනේ ලොවක් දුටුවා',
+    artist:     'Clarence Wijewardana',
+    key:        'A',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Sihina Lowak Dutuwa (සිහිනේ ලොවක් දුටුවා) by Clarence Wijewardana is a dreamy Sinhala classic. Guitar chords in A — uses A, A7, D, E, G. A golden-era favourite from the legendary Sri Lankan vocalist.',
+    content:
+`[Intro]
+A
+D   A
+
+[Chorus]
+A   A7   D
+A   G   A
+
+[Verse 1]
+A   D
+E   D   G   A
+D
+E   D   G   A
+
+[Verse 2]
+A   D
+E   D   G   A
+D
+E   D   G   A`
+  },
+
+  {
+    id: 29,
+    titleRoman: 'Sithin Ma Nosalee',
+    titleSi:    'සිතින් මා නොසලේ',
+    artist:     'T.M. Jayarathna',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Sithin Ma Nosalee (සිතින් මා නොසලේ) by T.M. Jayarathna is a timeless Sinhala folk-classical song. Guitar chords in G — uses G, Em, Bm, C, D, D7, B, Am, B7, F#m, F, Dm. One of the most played songs by the celebrated vocalist.',
+    content:
+`[Intro]
+|G |Em |G |Em |
+|G |Em |Bm |C |
+|G |Em |Eb |G |
+
+[Chorus]
+G       D7      Em
+Sithin ma nosalee hindidi
+G       B       Am
+Kandula numba awidin
+B7      Em      G       F#m
+Niwa damu e nethe peeda
+D       C       G
+Nobidunu manawee
+
+[Inter]
+|D |Em |D |Bm |
+|D7 |D |Em |
+|F |Dm |G |
+|Am |
+|D |G |
+
+[Verse 1]
+G       Bm      Dm      E
+Thaniwa ma handana welawe
+Am      C       G
+Sali sali sithe
+Am      B       Em
+Watunu maha warusa mathak we
+D       D7      G
+Numba randi dase
+
+[Verse 2]
+G       Bm      Dm      E
+Thawama ma nodutu sinakan
+Am      C       G
+Hamunowu yaame
+Am      B       Em
+Kandula mata karuna karannai
+D       D7      G
+Ayadimi nibade`
+  },
+
+  {
+    id: 30,
+    titleRoman: 'Mayam Tharu Rene',
+    titleSi:    'මායම් තරු රේනේ',
+    artist:     'Amal Perera',
+    key:        'Am',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Mayam Tharu Rene (මායම් තරු රේනේ) by Amal Perera is a soulful Sinhala love song. Guitar chords in Am — uses Am, Dm, G, C, Em, Ab, F. A deeply romantic song from the beloved Sri Lankan vocalist.',
+    content:
+`[Intro]
+|Am |G |Am |G |
+|Am |G |F |F |
+|Am |G |Am |G |
+|Am |G |F |Em |
+
+[Chorus]
+Am          Dm
+මායම් තරු රේනේ බැල්මෙන් මිදී
+G           C
+පායන් ආ සඳටයි බැඳුණේ වෙලී
+Am          Dm
+රේනෙන් මිදුණා මා නෑ අත් බැඳී
+G           C
+මනමාල ඉන්නේ ප්‍රේමේ ගිලී
+Am          Em
+සීතාවියක් හින්දා රෑ නෑ නිදී
+Dm  Em  Dm  G   Am
+ඔබ හින්දයි තවමත් මා මඟ බලමින් ඉන්නේ රැඳී
+Dm  Em  Dm  G   Am
+කවදාවත් රිදවන්නේ හිමිවෙනම් උන්මාදිනී
+
+[Inter]
+|Am |G |F |Em |
+|Am |G |F |Em |
+|Am |- |F |Dm |
+|G |- |Am |Dm |
+
+[Verse 1]
+Am      F       G
+පාඩම් පොතේ සුවඳ අකුරින් ලියවුණ
+C       G       C
+උන්මාද ගීතෙද ගෙයුවේ ඔයා
+Am      F       G
+ඒ පොත් කොණේ ලීව හසුනත් ඔයාටයි
+C       G       C
+මේ පෙම් හැඟුම් නැවත දැක්කේ ඔයා
+Am      Ab      Dm
+හැමදාම නෙතු කීව ඒ පෙම් කතාවේ
+G               C
+හිතවත්කමක් නේද දැනුණේ කියා
+Am      Ab      Dm
+කවදාක ඉටුවන්නෙ මේ ප්‍රාර්ථනාවන්
+G               C
+දුක් ගින්දරේ හීන ඇවිළී ගියා
+
+[Verse 2]
+Am      F       G
+මල් හීන හිත බැන්ද කිරිකූඩු කාලේ
+C       G       C
+එක හීනයක් ගාව මම නැවතිලා
+Am      F       G
+තරු වගේ දිලිහෙද්දී පොඩි ඇස් ඔයාගේ
+C       G       C
+බෑ දැන් කියාගන්න හිත ගොළුවෙලා
+Am      Ab      Dm
+දැනගත්තද ඈත වෙන්වී ගියොතින්
+G               C
+හැමදාම විඳවන්න මා මෙහි තියා
+Am      Ab      Dm
+නොකියාම ඉන්නම් මගේ ප්‍රාර්ථනාවන්
+G               C
+මිතුදම් හොඳයි අහිමි වෙනවාට වඩා`
+  },
+
+  {
+    id: 31,
+    titleRoman: 'Me Jeewanaye',
+    titleSi:    'මේ ජීවනයේ',
+    artist:     'H.R. Jothipala',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Me Jeewanaye (මේ ජීවනයේ) by H.R. Jothipala is a timeless Sinhala classic celebrating the beauty of love. Guitar chords in G — uses G, D, D7, C, Bm, Em. A beloved song from the legendary Sri Lankan vocalist.',
+    content:
+`[Intro/Inter]
+|G |Bm |Em |G |
+|D |Em |D |C |
+|G |- |
+
+[Chorus]
+G               D
+මේ ජීවනයේ, මුළු සංසාරේ
+C       G       D       G
+උදාරයි, උදාරයි, උදාරයි ආදරේ
+G               D
+මහද ගිලෙන්නේ, පෙම් සිලිලාරේ
+C       G       D7      G
+උදාරයි, උදාරයි, උදාරයි ආදරේ
+
+[Verse 1]
+G               C
+දෑත දෑතේ බැඳ ඈ ලංවී
+G
+මට පෑවා ආදරේ
+C
+සනසානුලාලන තාලේ
+G
+දිවිතෙක්ම සිහිකෙරේ
+C               G
+ඒ නිල් දෑසේ බැල්මෙන් කල්මෙන්
+D       D7
+මා යන ගමනට දිරි දේ
+
+[Verse 2]
+G               C
+සුවඳ හාදු දුනි සතපාලා
+G
+යහනාවේ මා හොවාලා
+C
+පින්සාර ඇයගේ තුරුළේ
+G
+සැනසේ රජුන් පවා
+C               G
+ඈ දරුවෙකුගේ පණවැනි උත්තම
+D       D7
+අම්මාගේ ආදරයයි`
+  },
+
+  {
+    id: 32,
+    titleRoman: 'Ra Tharakavo',
+    titleSi:    'රෑ තාරකාවෝ',
+    artist:     'Clarence Wijewardana',
+    key:        'F',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Ra Tharakavo (රෑ තාරකාවෝ) by Clarence Wijewardana is a dreamy Sinhala classic. Guitar chords in F — uses F, C, Bb, Gm, F7, C7. A timeless song from the golden era of Sinhala music.',
+    content:
+`[Intro]
+|F |- |- |- |
+|Gm |- |- |- |
+|C |- |- |- |
+|F |- |- |- |
+
+[Chorus]
+F               C
+රෑ තාරකාවෝ බැලුවා එබී
+Bb              F
+කිමදෝ නුවන් ඔබගේ කඳුළින් පෙඟී
+F7      Bb      C
+ඊයේ දවාලේ අපගේ ලොවේ
+C7              F
+ආශා ගඟුල් යැවුණා
+
+[Verse 1]
+F               C
+කඳුළැලි සලාලා නොහඬන් ළඳේ
+Bb              F
+මමමයි කවදා හෝ ඔය දෑත ගන්නේ
+Gm              F
+ආශා විශාලයි ඉවසීම හීනයි
+C       C7      F
+දෙදෙනා කෙනෙකු වී බැඳුණා හෙමින්
+
+[Verse 2]
+F               C
+හඳුනන්නෙ දෝ ඔබ මාගේ සෙනේ
+Bb              F
+ඉවසන්නෙ දෝ ඔබ ඊයේ වගේ
+Gm              F
+හදවත කොණේ මා කඳුළක් තියෙනවා
+C       C7      F
+කිසිදාක නොසිතූ නොපැතූ ලෙසේ`
+  },
+
+  {
+    id: 33,
+    titleRoman: 'Nim Him Sewwa',
+    titleSi:    'නිම් හිම් සෙව්වා',
+    artist:     'Amaradeva',
+    key:        'C',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Nim Him Sewwa (නිම් හිම් සෙව්වා) by Amaradeva is a classical Sinhala song celebrating eternal love. Guitar chords in C — uses C, A, Dm, G, G7, F, A7, Am, D7. A masterpiece from Sri Lanka\'s most revered musician.',
+    content:
+`[Intro]
+|C |- |F |C |
+
+[Chorus]
+C       A       Dm
+නිම් හිම් සෙව්වා මා සසරේ
+G       G7      C
+හමුවී යුගයෙන් බැඳී යුගයේ
+C       A       Dm
+ලං වී වෙන් වී වරින් වරේ
+G       G7      C
+ඔබ හා මා රන් හුයකිනි බැඳුණේ
+
+[Verse 1]
+C       F       Dm      C
+දිවියේ ආශා ගැඹුරින් ගැඹුරේ
+A7      F       G7      C
+ළැගුම් සනහා අපමයි තැවුණේ
+F       G       Am
+ජන්මෙන් ජන්මේ රැව් දීලා
+G       F       C
+ඔබ හා නෙතඟේ රැඳුණා
+
+[Verse 2]
+C       F       Dm      C
+ඉර හඳ සේ මා පැතුමන් පැතුවා
+A7      F       G7      C
+සැනසුම් සයුරේ සුසුමන් හෙළුවා
+F       G       Am
+අතරින් පතරේ වියැකීලා
+G       F       C
+සටනින් අද මා දිනුවා වා`
+  },
+
+  {
+    id: 34,
+    titleRoman: 'Hitha Assata Heena Godak',
+    titleSi:    'හිත අස්සට හීන ගොඩක්',
+    artist:     'Athula Adhikari',
+    key:        'Em',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Hitha Assata Heena Godak (හිත අස්සට හීන ගොඩක්) by Athula Adhikari is a deeply emotional Sinhala ballad. Guitar chords in Em — uses Em, G, D, C, Am, Bm, Bsus4, D7. One of the most popular Sinhala songs for guitarists.',
+    content:
+`[Intro]
+Em  -   A   -   Em
+|Em |- |D |- |
+|C |D |Em |- |
+|Em |D |- |- |
+|D7 |G |- |- |
+|Em |D |- |- |
+|D |C |D |Em |
+
+[Chorus]
+Em      G       Em      D
+හිත අස්සට හීන ගොඩක් ගෙනල්ලා දුන්නා
+G       D       Bm      Em
+ඔය ඇස් දෙක අමතක කර ඉන්නෙ කොහොම
+Em      G       Em      D
+සුළඟ වගේ මා අතහැර දුරක යන්නට
+G       D       Bm      Em
+වරද මගේ රත්තරනේ කියලා දෙන්න
+
+[Verse 1]
+Em      Am      D       Em
+කඳුළක් කඳුළක් ගානේ පෙම දිය කරලා
+Em      Am      D       Em
+සුසුමක් ගානේ හදවත දුක් ගිනි අවුලා
+G       D       Bm      Bsus4
+අමතක කර ලන්නට බෑ මට නම් කිසිදා
+G       D       Bsus4   Em
+ආදරේ කියා දුන්නු ආදරී ඔයා
+
+[Verse 2]
+Em      Am      D       Em
+දැවුණත් දැවුණත් මිය ගිය පෙම සිහිකරලා
+Em      Am      D       Em
+සුවඳක්වත් නෑ මතකයේ අද නම් රැඳිලා
+G       D       Bm      Bsus4
+අමතක කරලන්නට බෑ මට නම් කිසිදා
+G       D       Bsus4   Em
+ජීවිතේ කියා දුන්නු ආදරී ඔයා`
+  },
+
+  {
+    id: 35,
+    titleRoman: 'Aradana',
+    titleSi:    'ආරාධනා',
+    artist:     'Amaradeva',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Aradana (ආරාධනා) by Amaradeva is a profoundly moving Sinhala classical song. Guitar chords in G — uses G, F, C, Am, D, D7, Em, B. A timeless masterpiece from Sri Lanka\'s most celebrated musical genius.',
+    content:
+`[Chorus]
+G       F       C
+ජීවිතයේ තනි මංසල අතරමං වෙලා
+F       C       G
+හුදෙකලාව සුසුම් හෙලන අතරක තැනහී
+G       Am      D       D7      G
+අතීතයේ ගිලිහී ගිය සතුට රැගෙන යළි වඩින්න
+G       C       Am      D       G
+ආරාධනා....... ආරාධනා..
+
+[Verse 1]
+G       F       G
+නෙළූ සුපෙම් කැටයම් අද පවුරු තලාවේ
+G       Em      C       Am
+මැකී ගියදෝ... ඔ....ඕ.. ඔ........ඕ...
+G       B       G
+කාලයේ වෙරළේ
+C       G       C       G
+ජීවිතයේ දිගු ගමනේ අනාථ වූ දා
+G               D       G
+සෙනෙහයේ සත් පියුමන් යළිදු පිපේවා
+G       C       Am      D       G
+ආරාධනා....... ආරාධනා..
+
+[Verse 2]
+G       F       G
+එදා සිඟිති කිරි සුවඳින්, යුග දිවි අරණේ
+G       Em      C       Am
+ඔබේ උණුසුමේ ... ඈ....ඒ.. ඈ........ඈ...
+G       B       G
+යළිදු උපන්නෙමු
+C       G       C       G
+පෙනුණු එවන් රජ දහනෙන් සමුගෙන යන දා
+G               D       G
+ඔබේ නුවන් පහනින් යළි එළිය ලැබේවා
+G       C       Am      D       G
+ආරාධනා....... ආරාධනා..`
   },
 
 ];

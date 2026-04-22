@@ -15,6 +15,41 @@
 
   <!-- Artist pages -->
   <url>
+    <loc>https://sinhalachords.com/artist/dasun-shanaka</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/bathiya-and-santhush</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/vijaya-kumarathunga</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/tm-jayarathna</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/hr-jothipala</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/amaradeva</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/athula-adhikari</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sinhalachords.com/artist/wayo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -198,6 +233,81 @@
   </url>
   <url>
     <loc>https://sinhalachords.com/song/dawasak-daa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/adare-pawasala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/unmadani</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/mal-mitak-thiyan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/ganga-addara</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/thawa-dawasak-hamu-wee-imu-me-bawe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/liyathambara</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/adara-mal-wala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/sihina-lowak-dutuwa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/sithin-ma-nosalee</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/mayam-tharu-rene</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/me-jeewanaye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/ra-tharakavo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/nim-him-sewwa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/hitha-assata-heena-godak</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/aradana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
