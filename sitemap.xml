@@ -19,10 +19,100 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/senaka-batagoda</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/milton-mallawarachchi</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/saman-de-silva</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/lahiru-perera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/jayasri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/priya-sooriyasena</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/athma-liyanage</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/victor-rathnayake</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/artist/kasun-kalhara</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Song pages -->
   <url>
     <loc>https://harsha-sira.github.io/chroads/song/api-kawuruda</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/sanasennam-ma</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/eda-rea</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/niyare-piyanegala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/labendiye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/sheela</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/ratakin-eha</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/awata-nokiyama-jeewithen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/thaniwennata-mage-lowe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://harsha-sira.github.io/chroads/song/kaulu-piyanpath</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
