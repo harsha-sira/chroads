@@ -2,6 +2,7 @@
 <html lang="si" data-theme="light">
 <head>
 <meta charset="UTF-8" />
+<base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- ── SEO: Base meta (updated dynamically per page) ── -->
@@ -866,8 +867,8 @@ function App() {
 
   // Handle browser back/forward buttons
   useEffect(()=>{
-    const handler = ()=>{
-      setStack(s=>s.length>1?s.slice(0,-1):[{view:'home'}]);
+    const handler = (e)=>{
+      setStack([e.state && e.state.view ? e.state : parseUrl()]);
     };
     window.addEventListener('popstate',handler);
     return ()=>window.removeEventListener('popstate',handler);
