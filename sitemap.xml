@@ -3,116 +3,201 @@
 
   <!-- Core pages -->
   <url>
-    <loc>https://harsha-sira.github.io/chroads/</loc>
+    <loc>https://sinhalachords.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artists</loc>
+    <loc>https://sinhalachords.com/artists</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Artist pages -->
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/wayo</loc>
+    <loc>https://sinhalachords.com/artist/wayo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/senaka-batagoda</loc>
+    <loc>https://sinhalachords.com/artist/senaka-batagoda</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/milton-mallawarachchi</loc>
+    <loc>https://sinhalachords.com/artist/milton-mallawarachchi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/saman-de-silva</loc>
+    <loc>https://sinhalachords.com/artist/saman-de-silva</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/lahiru-perera</loc>
+    <loc>https://sinhalachords.com/artist/lahiru-perera</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/jayasri</loc>
+    <loc>https://sinhalachords.com/artist/jayasri</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/priya-sooriyasena</loc>
+    <loc>https://sinhalachords.com/artist/priya-sooriyasena</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/athma-liyanage</loc>
+    <loc>https://sinhalachords.com/artist/athma-liyanage</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/victor-rathnayake</loc>
+    <loc>https://sinhalachords.com/artist/victor-rathnayake</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/artist/kasun-kalhara</loc>
+    <loc>https://sinhalachords.com/artist/kasun-kalhara</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/clarence-wijewardana</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/keerthi-pasquel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/milton-perera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/amal-perera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/nemesis</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/amarasiri-peiris</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/rookantha-gunathilaka</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Song pages -->
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/api-kawuruda</loc>
+    <loc>https://sinhalachords.com/song/api-kawuruda</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/sanasennam-ma</loc>
+    <loc>https://sinhalachords.com/song/sanasennam-ma</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/eda-rea</loc>
+    <loc>https://sinhalachords.com/song/eda-rea</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/niyare-piyanegala</loc>
+    <loc>https://sinhalachords.com/song/niyare-piyanegala</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/labendiye</loc>
+    <loc>https://sinhalachords.com/song/labendiye</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/sheela</loc>
+    <loc>https://sinhalachords.com/song/sheela</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/ratakin-eha</loc>
+    <loc>https://sinhalachords.com/song/ratakin-eha</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/awata-nokiyama-jeewithen</loc>
+    <loc>https://sinhalachords.com/song/awata-nokiyama-jeewithen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/thaniwennata-mage-lowe</loc>
+    <loc>https://sinhalachords.com/song/thaniwennata-mage-lowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://harsha-sira.github.io/chroads/song/kaulu-piyanpath</loc>
+    <loc>https://sinhalachords.com/song/kaulu-piyanpath</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/malata-bambareku-se</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/kandula-ithin-samaweyan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/sihina-dew-duwe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/sudu-andumin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/mal-pita-mal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/chakithaya</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/kandu-para-etha-aine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/hanthaneta-paayana-sanda</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/iwuru-thala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/dawasak-daa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

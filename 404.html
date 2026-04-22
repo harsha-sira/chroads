@@ -8,7 +8,7 @@
     // When a user visits /chroads/song/digasiye, GitHub Pages finds no file
     // and serves this 404.html. We capture the path, encode it as a query
     // string, and redirect to the root — which then restores the real URL.
-    var pathSegmentsToKeep = 1; // number of path segments before the app root (/chroads = 1)
+    var pathSegmentsToKeep = 0; // custom domain at root — no path prefix
     var l = window.location;
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +

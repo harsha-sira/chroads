@@ -44,6 +44,34 @@ window.ARTISTS_DATA = {
     description: 'Kasun Kalhara is a prolific and versatile Sri Lankan singer-songwriter known for emotionally rich Sinhala songs across many styles. Kaulu Piyanpath is one of his most beloved guitar songs. Find accurate and free Sinhala guitar chord charts for Kasun Kalhara songs on Sinhala Chroads.',
   },
 
+  'Clarence Wijewardana': {
+    description: 'Clarence Wijewardena was a legendary Sri Lankan musician, composer and vocalist who shaped the golden era of Sinhala pop music. Malata Bambareku Se is one of his most beloved and enduring classics. Explore free Sinhala guitar chord charts for Clarence Wijewardana songs on Sinhala Chroads.',
+  },
+
+  'Keerthi Pasquel': {
+    description: 'Keerthi Pasquel is a celebrated Sri Lankan singer known for his powerful, emotive voice and deeply romantic Sinhala songs. Kandula Ithin Samaweyan is one of his most popular and widely searched songs for guitar. Find free Sinhala guitar chord charts for Keerthi Pasquel songs here.',
+  },
+
+  'Milton Perera': {
+    description: 'Milton Perera is a popular Sri Lankan vocalist known for his melodic style and heartfelt Sinhala songs. Sihina Dew Duwe is one of his most cherished compositions and a favourite among guitarists. Discover accurate Sinhala guitar chord sheets for Milton Perera songs on Sinhala Chroads.',
+  },
+
+  'Amal Perera': {
+    description: 'Amal Perera is a highly popular Sri Lankan singer known for his soulful voice and romantic Sinhala ballads. Mal Pita Mal is one of his most iconic songs and a favourite for guitar players. Find free and accurate Sinhala guitar chord charts for Amal Perera songs here on Sinhala Chroads.',
+  },
+
+  'Nemesis': {
+    description: 'Nemesis is a popular Sri Lankan rock band known for powerful, emotionally charged Sinhala rock songs. Chakithaya is their most played song and a must-know for Sinhala rock guitarists. Find free guitar chord charts for Nemesis songs on Sinhala Chroads.',
+  },
+
+  'Amarasiri Peiris': {
+    description: 'Amarasiri Peiris is a veteran Sri Lankan singer celebrated for his warm voice and timeless Sinhala love songs. Hanthaneta Paayana Sanda is one of his most beloved classics and a favourite among guitarists. Find free Sinhala guitar chord charts for Amarasiri Peiris songs here.',
+  },
+
+  'Rookantha Gunathilaka': {
+    description: 'Rookantha Gunathilaka is one of Sri Lanka\'s most celebrated singers, known for his smooth, expressive voice and deeply romantic Sinhala songs. Dawasak Daa is among his most beloved classics. Explore free and accurate Sinhala guitar chord charts for Rookantha Gunathilaka songs on Sinhala Chroads.',
+  },
+
 };
 
 // ── Song data ─────────────────────────────────────────────────────────────────
@@ -617,6 +645,427 @@ Em    Am    C    D7         G
 සිත ඈත අරන් යන විමනේ සඳලුතලාවේ
 C    Bm    D    D7               G
 කවුළු පියන් වසනු මැනවි නෙතුකැන් හමුවේ...`
+  },
+
+  {
+    id: 11,
+    titleRoman: 'Malata Bambareku Se',
+    titleSi:    'මලට බඹරෙකු සේ',
+    artist:     'Clarence Wijewardana',
+    key:        'D',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Malata Bambareku Se (මලට බඹරෙකු සේ) by Clarence Wijewardana is a timeless Sinhala classic. Guitar chords in D — uses D, G, C, A. A golden-era favourite loved by guitarists across generations.',
+    content:
+`[Intro]
+|D |G |A |
+
+[Chorus]
+D         G    C    D
+මලට බඹරෙකු සේ රෑ ලනු ඔබ ළඟ
+D         G    A
+...
+
+[Verse 1]
+D    G    C    D
+G    C    A
+
+[Interlude]
+|D |G |A |
+
+[Verse 2]
+D    G    C    D
+D    G    C    A`
+  },
+
+  {
+    id: 12,
+    titleRoman: 'Kandula Ithin Samaweyan',
+    titleSi:    'කඳුළ ඉතින් සමාවෙයන්',
+    artist:     'Keerthi Pasquel',
+    key:        'E',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Kandula Ithin Samaweyan (කඳුළ ඉතින් සමාවෙයන්) by Keerthi Pasquel is a deeply emotional Sinhala love song. Guitar chords in E — uses E, A, B, B7. One of the most searched Sinhala guitar chord sheets.',
+    content:
+`[Intro]
+|E |A |
+
+[Chorus]
+E         B    A    B    E
+කඳුළ ඉතින් සමාවෙයන්...
+
+[Verse 1]
+E    A    B    B7
+
+[Verse 2]
+E    A    B    B7`
+  },
+
+  {
+    id: 13,
+    titleRoman: 'Sihina Dew Duwe',
+    titleSi:    'සිහින දෙව් දුවේ',
+    artist:     'Milton Perera',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Sihina Dew Duwe (සිහින දෙව් දුවේ) by Milton Perera is a cherished Sinhala romantic song. Guitar chords in G — uses G, Em, Bm, C, Am, D, D7. A must-know for Sinhala guitar players.',
+    content:
+`[Chorus]
+G    Em    C    G
+සිහින දෙව් දුවේ...
+D    D7    G
+
+[Interlude]
+|G |Bm |C |D |
+|Em |Am |
+
+[Verse 1]
+G    Bm    C    Am
+D    D7    G
+
+[Verse 2]
+G    Bm    C    Am
+D    D7    G
+
+[Verse 3]
+G    Bm    C    Am
+D    D7    G`
+  },
+
+  {
+    id: 14,
+    titleRoman: 'Sudu Andumin',
+    titleSi:    'සුදු ඇඳුමින්',
+    artist:     'JayaSri',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Sudu Andumin (සුදු ඇඳුමින්) by JayaSri is a beautiful and popular Sinhala song. Guitar chords in G — uses G, Am, Em, C, D, Dsus4. Another classic from the iconic Sri Lankan singer.',
+    content:
+`[Intro]
+|G |Am |C |D |
+
+[Chorus]
+G    Am    C    D
+සුදු ඇඳුමින් සැරි සිරියාවී...
+G    Am    C    D
+
+[Verse 1]
+Em    C    D    Dsus4
+
+[Verse 2]
+Em    C    D    Dsus4`
+  },
+
+  {
+    id: 15,
+    titleRoman: 'Mal Pita Mal',
+    titleSi:    'මල් පිට මල්',
+    artist:     'Amal Perera',
+    key:        'Am',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Mal Pita Mal (මල් පිට මල්) by Amal Perera is one of the most popular Sinhala romantic songs. Guitar chords in Am — uses Am, G, F, E, Dm. A beautiful song that every Sinhala guitarist should learn.',
+    content:
+`[Intro]
+|Am |G |F |E |
+
+[Chorus]
+Am         G    F    E
+මල් පිට මල් හැලෙනා දිගු මාවතේ
+Am         G    F    G
+පිය මත පිය තබමින් හිනැහෙන නුඹේ...
+Am    G    Dm    Am
+ඉඟි නළුවට වශීවී.....
+Am         G    F    E
+අත්පොළසන් නගයි තුරූපත් පවා...
+
+[Interlude]
+|Am |E |Dm |- |
+|E |- |Am |E |
+|Dm |- |E |- |
+|Am |G |F |E |
+
+[Verse 1]
+Am    G         Am
+දිය පිට දිය රැළි නඟන ගං දියේ
+Am    G         Am
+සැඩ රළ මතින් ඔරුවක නැගී
+Dm         E
+එතෙරට යනු දැක ඔබයි මමයි
+F    G              Am
+සැඩ නළ පවා හමන හැටි පුදුමයි
+F    G    Am    E
+සැඩ නළ පවා හමන හැටි පුදුමයි
+
+[Verse 2]
+Am    G              Am
+වැහි පිට වැහි හැලෙනා රාත්‍රියේ
+Am    G              Am
+උණුසුම් වෙමින් තුරුලට වෙවී
+Dm         E
+මුදු රස විඳිනා සඳ ඔබයි මමයි
+F    G              Am
+හිරිකඩ පවා දැනෙන හැටි පුදුමයි
+F    G    Am    E
+හිරිකඩ පවා දැනෙන හැටි පුදුමයි`
+  },
+
+  {
+    id: 16,
+    titleRoman: 'Chakithaya',
+    titleSi:    'චකිතය',
+    artist:     'Nemesis',
+    key:        'Em',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Chakithaya (චකිතය) by Nemesis is a powerful Sinhala rock song. Guitar chords in Em — uses Em, D, C, B, Am7, Asus2. One of the most played Sinhala rock songs on guitar.',
+    content:
+`[Intro]
+|Em |D |C |D |
+
+[Verse 1]
+Em    D    C    D    Em
+සේයාවක් වත් හද තුළ මා නොවන ලෙසේ,
+Em    D    C    D    Em
+මායාවක් වී ඔබ සිතුවම් මැකුවේ කෙසේ,
+Em    D    C    D    Em
+සේයාවක් වත් හද තුළ මා නොවන ලෙසේ,
+Em    D    C    D    Em
+මායාවක් වී ඔබ සිතුවම් මැකුවේ කෙසේ,
+C    D         Em
+චකිතය වත් නැතිද නැවතුයේ,
+C    D         Em
+මතකය කෙලෙසදෝ මියැදුණේ,
+
+[Chorus]
+Em
+හද දැවුණා,
+C    D
+කඳුළේ ගිලුණා,
+C
+නෙතු නිවුණා,
+D    B
+අඳුරේ එතුණා,
+Em
+Whoah! නිවුණා,
+C    D
+ලෝකේ දැවුණා,
+C    D    Em
+ඔබ නිමවූ සිහිනේ බිඳුණා.
+
+[Verse 2]
+Em    D    C    D    Em
+කඳුළැල්ලක් වත් නෙත තුළ මා නොරැඳෙන සේ.
+Em    D    C    D    Em
+මගේ ලොව ගිනි දැවෙනා යළි නොනිවෙන සේ.
+C    D         Em
+චකිතය වත් නැතිද නැවතුයේ,
+C    D         Em
+මතකය කෙලෙසදෝ මියැදුණේ,
+
+[Bridge]
+Em    C
+නිමේෂයක් D වූ අපේ ලෝකේ
+C    D    Em
+සමනලයින් සේ පියාඹුවත් එදා
+Em    Am7
+චපල හැඟුම් D ඔබේ මා දැවුයේ
+C    D         Em
+මායාවේ නෑ මා යළි බැඳෙන්නේ
+C    D    Asus2
+මායාවේ නෑ මා යළි බැඳෙන්නේ`
+  },
+
+  {
+    id: 17,
+    titleRoman: 'Kandu Para Etha Aine',
+    titleSi:    'කඳු පාර ඈත අයිනේ',
+    artist:     'Milton Mallawarachchi',
+    key:        'F#m',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Kandu Para Etha Aine (කඳු පාර ඈත අයිනේ) by Milton Mallawarachchi is a hauntingly beautiful Sinhala classic. Guitar chords in F#m — uses F#m, E, D, Bm, A, E7. A must-know song for Sinhala guitar players.',
+    content:
+`[Chorus]
+F#m    E    F#m
+කඳු පාර ඈත අයිනේ
+D         Bm    E
+සඳ රෑක ඈ සිනා සේ
+Bm    F#m    A         E
+වේදනා... සිතාරයේ, ඒ ගීත රාවේ ඇසේවා
+D    E    F#m
+ජීවිතේ පුරා...
+
+[Verse 1]
+F#m    A    Bm    E    E7    A
+යාළු වී දැවටී එදා... කී කතා අසා
+F#m    A    Bm    E    E7    A
+යාළු වී දැවටී එදා... කී කතා අසා...
+F#m    E    D    E    F#m
+පාළුවී හැඬුවා සදා... මාරුතේ පවා
+
+[Verse 2]
+F#m    A    Bm    E    E7    A
+ගං ඉමේ මා දැන් කළේ, පාසලේ පුරා....
+F#m    A    Bm    E    E7    A
+ගං ඉමේ මා දැන් කළේ, පාසලේ පුරා....
+F#m    E    D    E    F#m
+මා සොයා, ආවා වගේ වෙන් වෙලා ගියා....`
+  },
+
+  {
+    id: 18,
+    titleRoman: 'Hanthaneta Paayana Sanda',
+    titleSi:    'හන්තානට පායන හඳ',
+    artist:     'Amarasiri Peiris',
+    key:        'C',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Hanthaneta Paayana Sanda (හන්තානට පායන හඳ) by Amarasiri Peiris is a beloved Sinhala classic. Guitar chords in C — uses C, Em, Am, F, G, G7, Dm. A favourite for guitarists of all levels.',
+    content:
+`[Intro/Interlude]
+|C |- |Am |F |
+|Am |G |C |- |
+|C |G |F |C |
+|Dm |G7 |C |- |
+
+[Chorus]
+C    Am         F    C
+හන්තානට පායන හඳ ලස්සනයිද කියන්න
+G    G7         C    G    G7    C
+මා නොදකින ඒ පුර හඳ ඔබට හැකිය දකින්න
+
+[Verse 1]
+C    Em    Am
+අඳුරු ලාලා වහිනා සඳ
+F         C
+සරසවි බිම තෙමෙන්න
+|Am |Em |F |C |
+C    Em    Am
+අඳුරු ලාලා වහිනා සඳ
+F         C
+සරසවි බිම තෙමෙන්න
+G    G7
+කුඩේ යටින් ඔබ යන කල
+C    G    C
+එපා තනිය දැනෙන්න
+
+[Verse 2]
+C    Em    Am
+ලතා මඬුලු අත වනාවි
+F         C
+එපා අහක බලන්න
+|Am |Em |F |C |
+C    Em    Am
+ලතා මඬුලු අත වනාවි
+F         C
+එපා අහක බලන්න
+G    G7
+මා ගැන මතකය ගුළි කර
+C    G    C
+මහවැළියට දමන්න`
+  },
+
+  {
+    id: 19,
+    titleRoman: 'Iwuru Thala',
+    titleSi:    'ඉවුරු තලා',
+    artist:     'Milton Mallawarachchi',
+    key:        'G',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Iwuru Thala (ඉවුරු තලා) by Milton Mallawarachchi is a classic Sinhala song full of longing and emotion. Guitar chords in G — uses G, Bm, C, D, D7, Am. One of Milton\'s most requested guitar chord sheets.',
+    content:
+`[Intro]
+|G |Bm |C |D7 |G |
+
+[Chorus]
+G              D
+ඉවුරු තලා , ගඟ බැස යනවා
+D7             G
+මහද සලා ඔබ ඉවතට යනවා
+
+[Verse 1]
+G    C              D
+මන්දාර පව්වේ හිම පියසේ
+D7    C         G
+චන්දන අරණේ මඳ සිසිලේ
+C    Am    D7    G
+සුව නොලබා... ගියේදෝ කෙසේ
+
+[Verse 2]
+G    C              D
+කඩුපුල් නෙලලා පිනි ඉසලා
+D7    C         G
+රන්හුයේ පටලා අමුණලා
+C    Am    D7    G
+සිටියෙමි මා ඔබ එන තුරා`
+  },
+
+  {
+    id: 20,
+    titleRoman: 'Dawasak Daa',
+    titleSi:    'දවසක් දා',
+    artist:     'Rookantha Gunathilaka',
+    key:        'Ab',
+    beat:       '4/4',
+    capo:       0,
+    tags:       ['top100'],
+    description: 'Dawasak Daa (දවසක් දා) by Rookantha Gunathilaka is a beautifully nostalgic Sinhala love song. Guitar chords in Ab — uses Ab, Cm, Bbm, Eb, Ebaug, F#. A classic that stirs deep emotion.',
+    content:
+`[Verse 1]
+Ab              Cm    Bbm
+දවසක් දා... හැන්දෑවක
+Bbm    Eb    Ab
+පොතක් බලන්නට සිතුණා
+Ab              Cm    Bbm
+හිතුවෙත් නෑ... ඒ ජාමෙට
+Bbm    Eb    Ab
+ඔබව මතක්වෙයි කියලා
+
+[Chorus 1]
+Ebaug
+ඈ මගේ ගතේ හැඟුමන් පෙළා
+Eb         Ab
+ඈ මගේ සිතේ සක්මන් කළා
+Ebaug
+මා දිහා බලා සුසුමන් සලා
+Eb         Ab
+ආදරෙයි කියා නොකියා ගියා
+Bbm    Eb         Ab
+ගිය පොතේ ලියැවී... තිබුණා...
+
+[Chorus 2]
+Ab    Bbm    Eb    Ab
+රේණු රේණු මල් මිටේ රේණු
+Ab    Bbm    Eb    Ab
+ඈට පෙම් කරන්න මට බෑ ලු
+Bbm    Cm    Bbm         Ab
+රන් සමනල තටු මට ලැබෙන්නේ නෑ ලු
+Bbm    Eb    Ab
+රොන් පිරී සැලෙන්න මල් රේණු
+
+[Verse 2]
+Ab    Cm
+සඳ වත දෝ මා දුටුවේ
+Bbm    Eb    Ab
+ඔබේ ගත දෝ මා දුටුවේ
+Ab    F#
+සිතුවම් දෝ.... මා දුටුවේ
+Ab    Eb    Ab
+සැබැහින් දෝ... ඔබ දුටුවේ`
   },
 
 ];
