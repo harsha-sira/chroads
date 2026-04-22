@@ -8,14 +8,41 @@
 // Fields:
 //   id          — unique number, never reuse
 //   titleRoman  — Singlish name (used in nav, cards, search)
-//   titleSi     — Sinhala Unicode title (optional, used in chord sheet header)
-//   artist      — exact artist name (must match across songs for grouping)
+//   titleSi     — Sinhala Unicode title (shown in song header)
+//   artist      — exact artist name (must match ARTISTS_DATA key below)
 //   key         — original key, e.g. 'C', 'Am', 'G'
 //   beat        — time signature, e.g. '4/4', '3/4', '6/8'
 //   capo        — fret number (0 = no capo)
 //   tags        — array, add 'top100' to include in the Top 100 list
+//   description — SEO-only sentence (not shown on screen, used in meta/JSON-LD)
 //   content     — chord sheet (template literal, keep as-is)
 // ─────────────────────────────────────────────────────────────────────────────
+
+// ── Artist descriptions ───────────────────────────────────────────────────────
+// Shown on the artist page. Keep keyword-rich (name + "Sinhala guitar chords").
+// To add a new artist: add an entry here with the exact same name as in songs.
+
+window.ARTISTS_DATA = {
+
+  'Dhanithi Sri': {
+    description: 'Dhanithi Sri is a popular Sri Lankan singer and songwriter celebrated for his emotive Sinhala ballads. His music blends heartfelt lyrics with melodic guitar arrangements, making his songs favourites for guitarists learning Sinhala chords. Songs like Digasiye and Alokawarsha are among the most searched Sinhala guitar chords online.',
+  },
+
+  'Bathiya & Santhush': {
+    description: 'Bathiya & Santhush (BnS) are a legendary Sri Lankan music duo who redefined Sinhala pop music across three decades. Their iconic romantic songs and timeless melodies remain some of the most requested Sinhala guitar chord charts. If you are looking for Sinhala chords for BnS songs, you will find clean and accurate chord sheets here.',
+  },
+
+  'Rookantha Gunathilake': {
+    description: 'Rookantha Gunathilake is a veteran Sri Lankan vocalist and music composer renowned for his classical Sinhala songs and distinctive voice. His contributions to modern Sinhala music span several decades, and his songs are beloved by guitarists of all levels. Find free Sinhala guitar chord charts for Rookantha Gunathilake songs here.',
+  },
+
+  'Sanath Nandasiri': {
+    description: 'Sanath Nandasiri is an iconic Sri Lankan singer celebrated for his rich voice and his immense contribution to Sinhala music and folk traditions. His songs carry a timeless quality that resonates with audiences across generations. Discover free guitar chord charts for Sanath Nandasiri songs on Sinhala Chroads.',
+  },
+
+};
+
+// ── Song data ─────────────────────────────────────────────────────────────────
 
 window.SONGS_DATA = [
 
@@ -28,6 +55,7 @@ window.SONGS_DATA = [
     beat:       '4/4',
     capo:       4,
     tags:       ['top100'],
+    description: 'Digasiye (දිගාසියේ) is a romantic Sinhala ballad by Dhanithi Sri. Guitar chords in the key of E with capo on the 4th fret — shapes are C, F, Am, G, Dm7. A popular choice for beginner and intermediate Sinhala guitar players.',
     content:
 `Place the capo on 4th fret
 
@@ -98,6 +126,7 @@ C-- F-- C-- F`
     beat:       '4/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Alokawarsha (ආලෝකවර්ෂ) is a melodic Sinhala love song by Dhanithi Sri. Guitar chords in the key of G — uses G, D, Em, C, a great progression for beginner Sinhala guitar players.',
     content:
 `[Verse]
 G         D
@@ -125,6 +154,7 @@ G    D    Em   C
     beat:       '3/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Aprakashitha (අප්‍රකාශිත) by Dhanithi Sri is a soulful Sinhala waltz in 3/4 time. Guitar chords in Am — uses Am, G, F, C.',
     content:
 `[Verse]
 Am   G
@@ -146,6 +176,7 @@ C    G    Am   F
     beat:       '4/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Loka Sithiyama (ලෝක සිතියම) by Dhanithi Sri is a popular Sinhala song with guitar chords in the key of D — uses D, A, Bm, G.',
     content:
 `[Verse]
 D       A
@@ -167,6 +198,7 @@ D    A    Bm   G
     beat:       '4/4',
     capo:       2,
     tags:       ['top100'],
+    description: 'Pandama (පන්දම) by Dhanithi Sri is a romantic Sinhala guitar song played with capo on the 2nd fret. Chord shapes are Am, G, F, C — easy for beginner guitarists.',
     content:
 `Place the capo on 2nd fret
 
@@ -196,6 +228,7 @@ C    G    Am   F
     beat:       '4/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Sandaganawa (සඳගනවා) by Dhanithi Sri is a beautiful Sinhala song with guitar chords in G — uses G, Em, C, D. One of the most played Dhanithi Sri songs on guitar.',
     content:
 `[Verse]
 G    Em
@@ -223,6 +256,7 @@ G    D    Em   C
     beat:       '4/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Obe Wage Kenek (ඔබේ වාගේ කෙනෙක්) by Bathiya & Santhush is one of the most iconic BnS songs. Guitar chords in C — uses C, G, Am, F. A must-know for Sinhala guitar players.',
     content:
 `[Verse]
 C           G
@@ -244,6 +278,7 @@ C    G    Am   F
     beat:       '4/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Hadawatha Payana (හදවත පායන) by Bathiya & Santhush is a classic BnS love song. Guitar chords in G — uses G, D, Em, C.',
     content:
 `[Verse]
 G    D
@@ -265,6 +300,7 @@ G    D    Em   C
     beat:       '4/4',
     capo:       1,
     tags:       ['top100'],
+    description: 'Sudu Araliya (සුදු අරලිය) by Rookantha Gunathilake is a timeless Sinhala classic. Guitar chords with capo on the 1st fret — uses F, C, Dm, Bb shapes.',
     content:
 `Place the capo on 1st fret
 
@@ -288,6 +324,7 @@ F    C    Dm   Bb
     beat:       '3/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Sanda Eliya (සඳ එළිය) by Rookantha Gunathilake is a gentle Sinhala waltz in 3/4 time. Guitar chords in D — uses D, A, Bm, G.',
     content:
 `[Verse]
 D       A
@@ -309,6 +346,7 @@ D    A    Bm   G
     beat:       '4/4',
     capo:       0,
     tags:       ['top100'],
+    description: 'Adare Nam (ආදරේ නම්) by Sanath Nandasiri is a beloved Sinhala song by one of Sri Lanka\'s most celebrated vocalists. Guitar chords in C — uses C, G, Am, F.',
     content:
 `[Verse]
 C       G

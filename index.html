@@ -289,7 +289,8 @@ const SITE_CONFIG = {
 const BASE_PATH = '/chroads';
 const BASE_URL  = 'https://harsha-sira.github.io/chroads';
 
-const SONGS = window.SONGS_DATA;
+const SONGS   = window.SONGS_DATA;
+const ARTISTS = window.ARTISTS_DATA || {};
 
 // ── URL / slug helpers ────────────────────────────────────────────────────────
 function slugify(str) {
@@ -348,9 +349,10 @@ function updateSEO(entry) {
     if (s) {
       url   = `${BASE_URL}/song/${slugify(s.titleRoman)}`;
       title = `${s.titleRoman} Chords — ${s.artist} | ${SITE}`;
-      desc  = `Free guitar chords for ${s.titleRoman}${s.titleSi ? ' ('+s.titleSi+')' : ''} by ${s.artist}. `
+      desc  = s.description ||
+              (`Free guitar chords for ${s.titleRoman}${s.titleSi ? ' ('+s.titleSi+')' : ''} by ${s.artist}. `
             + `Key: ${s.key}${s.capo ? ', Capo '+s.capo : ''}. Beat: ${s.beat}. `
-            + `Sinhala guitar chord chart with transpose tool.`;
+            + `Sinhala guitar chord chart with transpose tool.`);
       graph.push({
         '@type': 'MusicComposition',
         name: s.titleRoman,
@@ -366,8 +368,10 @@ function updateSEO(entry) {
     const count = SONGS.filter(s => s.artist === artist).length;
     url   = `${BASE_URL}/artist/${slugify(artist)}`;
     title = `${artist} Guitar Chords (${count} songs) | ${SITE}`;
-    desc  = `${count} free Sinhala guitar chord chart${count!==1?'s':''} for ${artist}. `
-          + `Play your favourite ${artist} songs with accurate chord charts.`;
+    const artistInfo = ARTISTS[artist];
+    desc  = (artistInfo && artistInfo.description)
+          || (`${count} free Sinhala guitar chord chart${count!==1?'s':''} for ${artist}. `
+            + `Play your favourite ${artist} songs with accurate chord charts.`);
     graph.push({ '@type': 'Person', name: artist, url });
   } else if (view === 'allArtists') {
     url   = `${BASE_URL}/artists`;
@@ -593,10 +597,16 @@ function AllArtistsPage({ songs, onSelectArtist }) {
 // ── Artist Page ───────────────────────────────────────────────────────────────
 function ArtistPage({ artistName, songs, onSelectSong }) {
   const artistSongs = songs.filter(s=>s.artist===artistName);
+  const artistInfo  = ARTISTS[artistName];
   return (
     <div className="page">
       <div className="page-title">{artistName}</div>
       <div className="page-sub">{artistSongs.length} song{artistSongs.length!==1?'s':''} · Free Sinhala guitar chords</div>
+      {artistInfo && artistInfo.description && (
+        <p style={{fontSize:14,lineHeight:1.7,color:'var(--text-dim)',marginBottom:24,padding:'14px 16px',background:'var(--surface)',borderRadius:10,border:'1px solid var(--border)'}}>
+          {artistInfo.description}
+        </p>
+      )}
       <div className="artist-songs-list">
         {artistSongs.map(s=>(
           <div key={s.id} className="artist-song-item" onClick={()=>onSelectSong(s.id)}>
