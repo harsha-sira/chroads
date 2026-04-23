@@ -467,7 +467,7 @@ function Nav({ theme, toggleTheme, onBack, onHome, showBack }) {
   return (
     <nav className="nav">
       {showBack && <button className="nav-back" onClick={onBack}>←</button>}
-      <div className="nav-logo" onClick={onHome}>Sinhala Ch<span>r</span>oads</div>
+      <div className="nav-logo" onClick={onHome}>Sinhala <span>Chords</span></div>
       <div className="nav-spacer" />
       <ModeToggle theme={theme} toggleTheme={toggleTheme} />
     </nav>
@@ -529,7 +529,7 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
   return (
     <div className="home">
       <div className="home-hero">
-        <div className="home-title">Sinhala Ch<span>r</span>oads</div>
+        <div className="home-title">Sinhala <span>Chords</span></div>
         <div className="home-sub">
           Your go-to place for free Sinhala guitar chord charts.<br/>
           Pick a song, grab your guitar, and play.
