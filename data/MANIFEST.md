@@ -51,10 +51,27 @@ Edit the chunk file directly for lyric/chord fixes. Ask for a commit when done.
 | 43 | Sonduru Atheethaye                     | T.M. Jayarathna         |
 | 44 | Suwanda Dani Danenawa                  | Rookantha Gunathilaka   |
 | 45 | Wahi Pabalu Seli                       | Surendra Perera         |
-| 46 | *(next song here)*                     |                         |
+| 46 | Sanda Kan Wasila                       | Victor Rathnayake       |
+| 47 | Hitha Hiriwetunado                     | Bachi Susan             |
+| 48 | Sanda Latha                            | Keerthi Pasquel         |
+| 49 | Sulanga Numba Wagei                    | Karunarathna Diwulgane  |
+| 50 | Ukulata Nawath                         | Rookantha Gunathilaka   |
 
 ## Chunk: songs-content-051-100.js (IDs 51–100)
-*(create this file when ID 51 is added)*
+
+| ID | Title (Roman)                          | Artist                  |
+|----|----------------------------------------|-------------------------|
+| 51 | Gamen Liyumak Awilla                   | Clarence Wijewardana    |
+| 52 | Tharuka Niwa                           | Ajith Bandara           |
+| 53 | Oba Dutu E Mul Dine                    | Gypsies                 |
+| 54 | Madu Mala Lesa                         | Milton Mallawarachchi   |
+| 55 | Nidi Nathi Raya                        | Senaka Batagoda         |
+| 56 | Dekopul Kandulin Thema                 | Lahiru Perera           |
+| 57 | Sihinayak                              | Nadeeka Jayawardana     |
+| 58 | Maali Sihina Kumari                    | Athma Liyanage          |
+| 59 | Ma Nisa Oba                            | Milton Mallawarachchi   |
+| 60 | Hiruge Lowedi                          | Clarence Wijewardana    |
+| 61 | *(next song here)*                     |                         |
 
 ## Notes
 - To add a song: append to songs-index.js + append content to the right chunk file + update sitemap.xml

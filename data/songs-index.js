@@ -117,6 +117,26 @@ window.ARTISTS_DATA = {
     description: 'Surendra Perera is a beloved Sri Lankan singer known for his versatile style spanning romantic and devotional Sinhala songs. Wahi Pabalu Seli is one of his most widely played songs on guitar. Explore free and accurate Sinhala guitar chord charts for Surendra Perera songs on Sinhala Chords.',
   },
 
+  'Bachi Susan': {
+    description: 'Bachi Susan is a popular Sri Lankan singer-songwriter known for her emotive voice and heartfelt Sinhala pop songs. Hitha Hiriwetunado is one of her most widely searched songs for guitar. Find free and accurate Sinhala guitar chord charts for Bachi Susan songs on Sinhala Chords.',
+  },
+
+  'Karunarathna Diwulgane': {
+    description: 'Karunarathna Diwulgane is a celebrated Sri Lankan singer known for his soulful voice and romantic Sinhala songs. Sulanga Numba Wagei is one of his most popular and widely played songs on guitar. Discover free Sinhala guitar chord charts for Karunarathna Diwulgane songs here.',
+  },
+
+  'Ajith Bandara': {
+    description: 'Ajith Bandara is a talented Sri Lankan singer known for melodic and emotionally rich Sinhala songs. Tharuka Niwa is one of his most requested guitar chord sheets. Find free and accurate Sinhala guitar chord charts for Ajith Bandara songs on Sinhala Chords.',
+  },
+
+  'Gypsies': {
+    description: 'Gypsies are one of Sri Lanka\'s most beloved bands, known for timeless Sinhala pop and folk-influenced songs that have spanned generations. Oba Dutu E Mul Dine is one of their most iconic tracks. Explore free Sinhala guitar chord charts for Gypsies songs on Sinhala Chords.',
+  },
+
+  'Nadeeka Jayawardana': {
+    description: 'Nadeeka Jayawardana is a popular Sri Lankan singer known for her beautiful voice and romantic Sinhala songs. Sihinayak is one of her most loved and searched songs for guitar. Find free and accurate Sinhala guitar chord charts for Nadeeka Jayawardana songs on Sinhala Chords.',
+  },
+
 };
 
 // ── Song index (metadata only — chord content lives in songs-content-NNN-NNN.js) ──
@@ -167,5 +187,20 @@ window.SONGS_DATA = [
   { id: 43, titleRoman: 'Sonduru Atheethaye',                titleSi: 'සොඳුරු අතීතයේ',             artist: 'T.M. Jayarathna',        key: 'E',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Sonduru Atheethaye (සොඳුරු අතීතයේ) by T.M. Jayarathna is a timeless Sinhala song about cherished memories and eternal love. Guitar chords in E — uses E, F#m, C#m, A, Abm, B7. A beautiful classic for guitarists of all levels.' },
   { id: 44, titleRoman: 'Suwanda Dani Danenawa',             titleSi: 'සුවඳ දැනේ දැනෙනවා',         artist: 'Rookantha Gunathilaka',  key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Suwanda Dani Danenawa (සුවඳ දැනේ දැනෙනවා) by Rookantha Gunathilaka is a joyful and uplifting Sinhala song. Guitar chords in G — uses G, Am, D7, Em, C, Bm, G7, D. A popular favourite from the celebrated Sri Lankan vocalist.' },
   { id: 45, titleRoman: 'Wahi Pabalu Seli',                  titleSi: 'වැහි පබළු සැලී',             artist: 'Surendra Perera',        key: 'Am',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Wahi Pabalu Seli (වැහි පබළු සැලී) by Surendra Perera is a romantic Sinhala song with beautiful imagery. Guitar chords in Am — uses Am, G, Em, F, C, Dm. A lovely song that is popular among Sinhala guitar players.' },
+  { id: 46, titleRoman: 'Sanda Kan Wasila',                  titleSi: 'සඳ කන් වැසිලා',              artist: 'Victor Rathnayake',      key: 'Am',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Sanda Kan Wasila (සඳ කන් වැසිලා) by Victor Rathnayake is a classic Sinhala romantic song. Guitar chords in Am — uses Am, C, F, E, G. A timeless favourite from the legendary Sri Lankan vocalist.' },
+  { id: 47, titleRoman: 'Hitha Hiriwetunado',                titleSi: 'හිත හිරිවැටුනාදෝ',           artist: 'Bachi Susan',            key: 'B',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Hitha Hiriwetunado (හිත හිරිවැටුනාදෝ) by Bachi Susan is a deeply emotional Sinhala pop song. Guitar chords in B — uses B, Abm, E, F#, Eb, C#m. One of the most popular Sinhala songs for guitar.' },
+  { id: 48, titleRoman: 'Sanda Latha',                       titleSi: 'සඳ ලතා',                     artist: 'Keerthi Pasquel',        key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Sanda Latha (සඳ ලතා) by Keerthi Pasquel is a beautiful and romantic Sinhala song. Guitar chords in G — uses G, Bm, Am, C, D, D7, Em. A popular favourite from the celebrated Sri Lankan singer.' },
+  { id: 49, titleRoman: 'Sulanga Numba Wagei',               titleSi: 'සුළඟ නුඹ වාගේ',              artist: 'Karunarathna Diwulgane', key: 'Dm',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Sulanga Numba Wagei (සුළඟ නුඹ වාගේ) by Karunarathna Diwulgane is a soulful Sinhala love song. Guitar chords in Dm — uses Dm, C, Am, F, Gm, Bb. One of the most popular Sinhala songs on guitar.' },
+  { id: 50, titleRoman: 'Ukulata Nawath',                    titleSi: 'උකුලට නැවත',                 artist: 'Rookantha Gunathilaka',  key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Ukulata Nawath (උකුලට නැවත) by Rookantha Gunathilaka is a deeply moving Sinhala song about a mother\'s love. Guitar chords in G — uses G, Em, D, Am, C, Eb, Bm. A beautiful tribute loved by guitarists.' },
+  { id: 51, titleRoman: 'Gamen Liyumak Awilla',              titleSi: 'ගමෙන් ලියුමක් ආවිල්ලා',     artist: 'Clarence Wijewardana',   key: 'C',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Gamen Liyumak Awilla (ගමෙන් ලියුමක් ආවිල්ලා) by Clarence Wijewardana is a nostalgic Sinhala classic about home and family. Guitar chords in C — uses C, C7, F, G. A golden-era favourite from the legendary vocalist.' },
+  { id: 52, titleRoman: 'Tharuka Niwa',                      titleSi: 'තරු කා නිවා',                artist: 'Ajith Bandara',          key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Tharuka Niwa (තරු කා නිවා) by Ajith Bandara is a beautifully melodic Sinhala song. Guitar chords in Em — uses Em, G, Am, D, C, Cmaj7, Bm. A popular contemporary Sinhala ballad for guitarists.' },
+  { id: 53, titleRoman: 'Oba Dutu E Mul Dine',               titleSi: 'ඔබ දුටු ඒ මුල් දිනේ',        artist: 'Gypsies',                key: 'F',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Oba Dutu E Mul Dine (ඔබ දුටු ඒ මුල් දිනේ) by Gypsies is a timeless Sinhala love song. Guitar chords in F — uses F, C, Bb, Eb, A, Dm. A beloved classic from one of Sri Lanka\'s most iconic bands.' },
+  { id: 54, titleRoman: 'Madu Mala Lesa',                    titleSi: 'මදු මල ලෙස',                 artist: 'Milton Mallawarachchi',  key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Madu Mala Lesa (මදු මල ලෙස) by Milton Mallawarachchi is a poetic and deeply romantic Sinhala classic. Guitar chords in Em — uses Em, Am, G, Bm, C, D. A beautiful song from the legendary Sri Lankan vocalist.' },
+  { id: 55, titleRoman: 'Nidi Nathi Raya',                   titleSi: 'නිදි නැති රෑ',               artist: 'Senaka Batagoda',        key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Nidi Nathi Raya (නිදි නැති රෑ) by Senaka Batagoda is a romantic Sinhala ballad about sleepless longing. Guitar chords in G — uses G, Cadd9, D, C, Am. A popular song among Sinhala guitar players.' },
+  { id: 56, titleRoman: 'Dekopul Kandulin Thema',             titleSi: 'දෙකොපුල් කඳුළින් තෙමා',     artist: 'Lahiru Perera',          key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Dekopul Kandulin Thema (දෙකොපුල් කඳුළින් තෙමා) by Lahiru Perera is a deeply emotional Sinhala song. Guitar chords in Em — uses Em, D, C, B7, Cmaj7, Am, B, G. One of the most requested Lahiru Perera guitar chord sheets.' },
+  { id: 57, titleRoman: 'Sihinayak',                          titleSi: 'සිහිනයක්',                  artist: 'Nadeeka Jayawardana',    key: 'D',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Sihinayak (සිහිනයක්) by Nadeeka Jayawardana is a beautiful Sinhala love song. Guitar chords in D — uses D, A, G, Bm, F#m. A popular romantic song from the talented Sri Lankan singer.' },
+  { id: 58, titleRoman: 'Maali Sihina Kumari',               titleSi: 'මාලී සිහින කුමාරී',          artist: 'Athma Liyanage',         key: 'Dm',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Maali Sihina Kumari (මාලී සිහින කුමාරී) by Athma Liyanage is a romantic and dreamy Sinhala song. Guitar chords in Dm — uses Dm, C, Bb, Am. A beautiful track from the gifted singer-songwriter.' },
+  { id: 59, titleRoman: 'Ma Nisa Oba',                        titleSi: 'මා නිසා ඔබ',                artist: 'Milton Mallawarachchi',  key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Ma Nisa Oba (මා නිසා ඔබ) by Milton Mallawarachchi is a heartfelt Sinhala love song. Guitar chords in G — uses G, Am, D, C. A popular classic from the legendary Sri Lankan vocalist.' },
+  { id: 60, titleRoman: 'Hiruge Lowedi',                      titleSi: 'හිරුගේ ලොවේදී',              artist: 'Clarence Wijewardana',   key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Hiruge Lowedi (හිරුගේ ලොවේදී) by Clarence Wijewardana is a timeless Sinhala classic full of warmth and beauty. Guitar chords in Em — uses Em, D, C, E, A, B. A golden-era song loved by guitarists of all generations.' },
 
 ];
