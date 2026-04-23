@@ -42,7 +42,16 @@ Edit the chunk file directly for lyric/chord fixes. Ask for a commit when done.
 | 33 | Nim Him Sewwa                          | Amaradeva               |
 | 34 | Hitha Assata Heena Godak               | Athula Adhikari         |
 | 35 | Aradana                                | Amaradeva               |
-| 36 | *(next song here)*                     |                         |
+| 37 | Awasara Natha Mata Obe Atha Gannata    | Milton Mallawarachchi   |
+| 38 | Duka Hadu Dena Raye                    | Gunadasa Kapuge         |
+| 39 | Mata Heenayak Wela                     | Damith Asanka           |
+| 40 | Hawasaka Ma                            | Lahiru Perera           |
+| 41 | Apa Hamuweema Wenweema Do Adare        | Namal Udugama           |
+| 42 | Wikasitha Pathuman Obe Laye            | Milton Mallawarachchi   |
+| 43 | Sonduru Atheethaye                     | T.M. Jayarathna         |
+| 44 | Suwanda Dani Danenawa                  | Rookantha Gunathilaka   |
+| 45 | Wahi Pabalu Seli                       | Surendra Perera         |
+| 46 | *(next song here)*                     |                         |
 
 ## Chunk: songs-content-051-100.js (IDs 51–100)
 *(create this file when ID 51 is added)*

@@ -134,6 +134,26 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/gunadasa-kapuge</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/damith-asanka</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/namal-udugama</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/surendra-perera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Song pages -->
   <url>
@@ -308,6 +328,51 @@
   </url>
   <url>
     <loc>https://sinhalachords.com/song/aradana</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/awasara-natha-mata-obe-atha-gannata</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/duka-hadu-dena-raye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/mata-heenayak-wela</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/hawasaka-ma</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/apa-hamuweema-wenweema-do-adare</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/wikasitha-pathuman-obe-laye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/sonduru-atheethaye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/suwanda-dani-danenawa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/wahi-pabalu-seli</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

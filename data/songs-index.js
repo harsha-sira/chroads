@@ -101,6 +101,22 @@ window.ARTISTS_DATA = {
     description: 'Athula Adhikari is a popular Sri Lankan singer known for his romantic, melodic Sinhala songs that resonate with listeners of all ages. Hitha Assata Heena Godak is one of his most beloved hits. Discover free and accurate Sinhala guitar chord charts for Athula Adhikari songs on Sinhala Chroads.',
   },
 
+  'Gunadasa Kapuge': {
+    description: 'Gunadasa Kapuge is a celebrated Sri Lankan vocalist known for his soulful voice and deeply emotional Sinhala songs. Duka Hadu Dena Raye is one of his most beloved and widely searched songs for guitar. Find free Sinhala guitar chord charts for Gunadasa Kapuge songs on Sinhala Chroads.',
+  },
+
+  'Damith Asanka': {
+    description: 'Damith Asanka is a popular Sri Lankan singer known for his romantic and emotive Sinhala ballads. Mata Heenayak Wela is one of his most searched and loved songs. Discover free and accurate Sinhala guitar chord charts for Damith Asanka songs on Sinhala Chroads.',
+  },
+
+  'Namal Udugama': {
+    description: 'Namal Udugama is a gifted Sri Lankan singer known for deeply heartfelt Sinhala songs that resonate with listeners across generations. Apa Hamuweema Wenweema Do Adare is one of his most popular songs for guitar. Find free Sinhala guitar chord charts for Namal Udugama songs on Sinhala Chroads.',
+  },
+
+  'Surendra Perera': {
+    description: 'Surendra Perera is a beloved Sri Lankan singer known for his versatile style spanning romantic and devotional Sinhala songs. Wahi Pabalu Seli is one of his most widely played songs on guitar. Explore free and accurate Sinhala guitar chord charts for Surendra Perera songs on Sinhala Chroads.',
+  },
+
 };
 
 // ── Song index (metadata only — chord content lives in songs-content-NNN-NNN.js) ──
@@ -142,5 +158,14 @@ window.SONGS_DATA = [
   { id: 33, titleRoman: 'Nim Him Sewwa',                     titleSi: 'නිම් හිම් සෙව්වා',          artist: 'Amaradeva',              key: 'C',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Nim Him Sewwa (නිම් හිම් සෙව්වා) by Amaradeva is a classical Sinhala song celebrating eternal love. Guitar chords in C — uses C, A, Dm, G, G7, F, A7, Am, D7. A masterpiece from Sri Lanka\'s most revered musician.' },
   { id: 34, titleRoman: 'Hitha Assata Heena Godak',          titleSi: 'හිත අස්සට හීන ගොඩක්',      artist: 'Athula Adhikari',        key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Hitha Assata Heena Godak (හිත අස්සට හීන ගොඩක්) by Athula Adhikari is a deeply emotional Sinhala ballad. Guitar chords in Em — uses Em, G, D, C, Am, Bm, Bsus4, D7. One of the most popular Sinhala songs for guitarists.' },
   { id: 35, titleRoman: 'Aradana',                           titleSi: 'ආරාධනා',                   artist: 'Amaradeva',              key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Aradana (ආරාධනා) by Amaradeva is a profoundly moving Sinhala classical song. Guitar chords in G — uses G, F, C, Am, D, D7, Em, B. A timeless masterpiece from Sri Lanka\'s most celebrated musical genius.' },
+  { id: 37, titleRoman: 'Awasara Natha Mata Obe Atha Gannata', titleSi: 'අවසර නැත මට ඔබේ අත ගන්නට', artist: 'Milton Mallawarachchi',  key: 'A',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Awasara Natha Mata Obe Atha Gannata (අවසර නැත මට ඔබේ අත ගන්නට) by Milton Mallawarachchi is a deeply emotional Sinhala love song. Guitar chords in A — uses A, Bm, D, E, F#m, G. A timeless classic from the legendary Sri Lankan vocalist.' },
+  { id: 38, titleRoman: 'Duka Hadu Dena Raye',               titleSi: 'දුක හාදු දෙන රෑයේ',        artist: 'Gunadasa Kapuge',        key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Duka Hadu Dena Raye (දුක හාදු දෙන රෑයේ) by Gunadasa Kapuge is a soulful Sinhala classic about longing and love. Guitar chords in Em — uses Em, G, Am, D, C, Bm, D7. A deeply moving song for guitarists of all levels.' },
+  { id: 39, titleRoman: 'Mata Heenayak Wela',                titleSi: 'මට හීනයක් වෙලා',            artist: 'Damith Asanka',          key: 'B',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Mata Heenayak Wela (මට හීනයක් වෙලා) by Damith Asanka is a beautifully romantic Sinhala ballad. Guitar chords in B — uses B, C#m, F#, Abm, Ebm. One of the most popular contemporary Sinhala songs on guitar.' },
+  { id: 40, titleRoman: 'Hawasaka Ma',                       titleSi: 'හවසක මා',                   artist: 'Lahiru Perera',          key: 'A',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Hawasaka Ma (හවසක මා) by Lahiru Perera is a heartfelt Sinhala love song. Guitar chords in A — uses A, F#m, E, D, Bm, C#m. A beautiful track from one of Sri Lanka\'s most popular contemporary singers.' },
+  { id: 41, titleRoman: 'Apa Hamuweema Wenweema Do Adare',   titleSi: 'අප හමුවීම වෙන්වීම දෝ ආදරේ', artist: 'Namal Udugama',         key: 'Em',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Apa Hamuweema Wenweema Do Adare (අප හමුවීම වෙන්වීම දෝ ආදරේ) by Namal Udugama is a deeply emotional Sinhala song about love and separation. Guitar chords in Em — uses Em, Bm, D, C. A must-know for Sinhala guitarists.' },
+  { id: 42, titleRoman: 'Wikasitha Pathuman Obe Laye',       titleSi: 'විකසිත පැතුමන් ඔබේ ලයේ',    artist: 'Milton Mallawarachchi',  key: 'Am',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Wikasitha Pathuman Obe Laye (විකසිත පැතුමන් ඔබේ ලයේ) by Milton Mallawarachchi is a lyrical Sinhala classic full of longing. Guitar chords in Am — uses Am, G, Em, F, A, D. One of the most requested Milton songs on guitar.' },
+  { id: 43, titleRoman: 'Sonduru Atheethaye',                titleSi: 'සොඳුරු අතීතයේ',             artist: 'T.M. Jayarathna',        key: 'E',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Sonduru Atheethaye (සොඳුරු අතීතයේ) by T.M. Jayarathna is a timeless Sinhala song about cherished memories and eternal love. Guitar chords in E — uses E, F#m, C#m, A, Abm, B7. A beautiful classic for guitarists of all levels.' },
+  { id: 44, titleRoman: 'Suwanda Dani Danenawa',             titleSi: 'සුවඳ දැනේ දැනෙනවා',         artist: 'Rookantha Gunathilaka',  key: 'G',   beat: '4/4', capo: 0, tags: ['top100'], description: 'Suwanda Dani Danenawa (සුවඳ දැනේ දැනෙනවා) by Rookantha Gunathilaka is a joyful and uplifting Sinhala song. Guitar chords in G — uses G, Am, D7, Em, C, Bm, G7, D. A popular favourite from the celebrated Sri Lankan vocalist.' },
+  { id: 45, titleRoman: 'Wahi Pabalu Seli',                  titleSi: 'වැහි පබළු සැලී',             artist: 'Surendra Perera',        key: 'Am',  beat: '4/4', capo: 0, tags: ['top100'], description: 'Wahi Pabalu Seli (වැහි පබළු සැලී) by Surendra Perera is a romantic Sinhala song with beautiful imagery. Guitar chords in Am — uses Am, G, Em, F, C, Dm. A lovely song that is popular among Sinhala guitar players.' },
 
 ];
