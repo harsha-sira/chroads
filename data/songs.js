@@ -1,15 +1,15 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// SINHALA CHROADS — Central Song Database
+// SINHALA CHORDS — Central Song Database
 // ─────────────────────────────────────────────────────────────────────────────
 
 window.ARTISTS_DATA = {
 
   'Wayo': {
-    description: 'Wayo is one of Sri Lanka\'s most beloved rock bands, known for blending soulful Sinhala lyrics with powerful guitar-driven melodies. Their iconic songs have defined a generation of Sri Lankan music lovers. Api Kawuruda remains one of the most played Sinhala songs on guitar, and you can find accurate Sinhala guitar chord charts for Wayo songs right here on Sinhala Chroads.',
+    description: 'Wayo is one of Sri Lanka\'s most beloved rock bands, known for blending soulful Sinhala lyrics with powerful guitar-driven melodies. Their iconic songs have defined a generation of Sri Lankan music lovers. Api Kawuruda remains one of the most played Sinhala songs on guitar, and you can find accurate Sinhala guitar chord charts for Wayo songs right here on Sinhala Chords.',
   },
 
   'Senaka Batagoda': {
-    description: 'Senaka Batagoda is a celebrated Sri Lankan singer known for his warm, emotive voice and deeply romantic Sinhala songs. Sanasennam Ma is one of the most searched Sinhala guitar chord sheets online. Find free and accurate guitar chords for Senaka Batagoda songs here on Sinhala Chroads.',
+    description: 'Senaka Batagoda is a celebrated Sri Lankan singer known for his warm, emotive voice and deeply romantic Sinhala songs. Sanasennam Ma is one of the most searched Sinhala guitar chord sheets online. Find free and accurate guitar chords for Senaka Batagoda songs here on Sinhala Chords.',
   },
 
   'Milton Mallawarachchi': {
@@ -17,7 +17,7 @@ window.ARTISTS_DATA = {
   },
 
   'Saman De Silva': {
-    description: 'Saman De Silva is a popular Sri Lankan singer celebrated for his melodic voice and heartfelt Sinhala songs. Niyare Piyanegala is a folk-influenced classic that guitarists love to play. Find free Sinhala guitar chord charts for Saman De Silva songs on Sinhala Chroads.',
+    description: 'Saman De Silva is a popular Sri Lankan singer celebrated for his melodic voice and heartfelt Sinhala songs. Niyare Piyanegala is a folk-influenced classic that guitarists love to play. Find free Sinhala guitar chord charts for Saman De Silva songs on Sinhala Chords.',
   },
 
   'Lahiru Perera': {
@@ -25,15 +25,15 @@ window.ARTISTS_DATA = {
   },
 
   'JayaSri': {
-    description: 'JayaSri is a highly acclaimed Sri Lankan singer and songwriter known for soulful, emotionally rich Sinhala songs. Sheela is one of her most iconic and widely searched songs for guitar. Find free and accurate Sinhala guitar chord charts for JayaSri songs on Sinhala Chroads.',
+    description: 'JayaSri is a highly acclaimed Sri Lankan singer and songwriter known for soulful, emotionally rich Sinhala songs. Sheela is one of her most iconic and widely searched songs for guitar. Find free and accurate Sinhala guitar chord charts for JayaSri songs on Sinhala Chords.',
   },
 
   'Priya Sooriyasena': {
-    description: 'Priya Sooriyasena is a talented Sri Lankan singer known for romantic and uplifting Sinhala songs. Ratakin Eha is one of his most requested guitar chord sheets. Find free Sinhala guitar chords for Priya Sooriyasena songs here on Sinhala Chroads.',
+    description: 'Priya Sooriyasena is a talented Sri Lankan singer known for romantic and uplifting Sinhala songs. Ratakin Eha is one of his most requested guitar chord sheets. Find free Sinhala guitar chords for Priya Sooriyasena songs here on Sinhala Chords.',
   },
 
   'Athma Liyanage': {
-    description: 'Athma Liyanage is a gifted Sri Lankan singer-songwriter known for poetic, introspective Sinhala songs. Awata Nokiyama Jeewithen and Liyathambara are among the most played Sinhala songs on guitar. Explore accurate guitar chord charts for Athma Liyanage songs on Sinhala Chroads.',
+    description: 'Athma Liyanage is a gifted Sri Lankan singer-songwriter known for poetic, introspective Sinhala songs. Awata Nokiyama Jeewithen and Liyathambara are among the most played Sinhala songs on guitar. Explore accurate guitar chord charts for Athma Liyanage songs on Sinhala Chords.',
   },
 
   'Victor Rathnayake': {
@@ -41,11 +41,11 @@ window.ARTISTS_DATA = {
   },
 
   'Kasun Kalhara': {
-    description: 'Kasun Kalhara is a prolific and versatile Sri Lankan singer-songwriter known for emotionally rich Sinhala songs across many styles. Kaulu Piyanpath is one of his most beloved guitar songs. Find accurate and free Sinhala guitar chord charts for Kasun Kalhara songs on Sinhala Chroads.',
+    description: 'Kasun Kalhara is a prolific and versatile Sri Lankan singer-songwriter known for emotionally rich Sinhala songs across many styles. Kaulu Piyanpath is one of his most beloved guitar songs. Find accurate and free Sinhala guitar chord charts for Kasun Kalhara songs on Sinhala Chords.',
   },
 
   'Clarence Wijewardana': {
-    description: 'Clarence Wijewardena was a legendary Sri Lankan musician, composer and vocalist who shaped the golden era of Sinhala pop music. Malata Bambareku Se is one of his most beloved and enduring classics. Explore free Sinhala guitar chord charts for Clarence Wijewardana songs on Sinhala Chroads.',
+    description: 'Clarence Wijewardena was a legendary Sri Lankan musician, composer and vocalist who shaped the golden era of Sinhala pop music. Malata Bambareku Se is one of his most beloved and enduring classics. Explore free Sinhala guitar chord charts for Clarence Wijewardana songs on Sinhala Chords.',
   },
 
   'Keerthi Pasquel': {
@@ -53,15 +53,15 @@ window.ARTISTS_DATA = {
   },
 
   'Milton Perera': {
-    description: 'Milton Perera is a popular Sri Lankan vocalist known for his melodic style and heartfelt Sinhala songs. Sihina Dew Duwe is one of his most cherished compositions and a favourite among guitarists. Discover accurate Sinhala guitar chord sheets for Milton Perera songs on Sinhala Chroads.',
+    description: 'Milton Perera is a popular Sri Lankan vocalist known for his melodic style and heartfelt Sinhala songs. Sihina Dew Duwe is one of his most cherished compositions and a favourite among guitarists. Discover accurate Sinhala guitar chord sheets for Milton Perera songs on Sinhala Chords.',
   },
 
   'Amal Perera': {
-    description: 'Amal Perera is a highly popular Sri Lankan singer known for his soulful voice and romantic Sinhala ballads. Mal Pita Mal is one of his most iconic songs and a favourite for guitar players. Find free and accurate Sinhala guitar chord charts for Amal Perera songs here on Sinhala Chroads.',
+    description: 'Amal Perera is a highly popular Sri Lankan singer known for his soulful voice and romantic Sinhala ballads. Mal Pita Mal is one of his most iconic songs and a favourite for guitar players. Find free and accurate Sinhala guitar chord charts for Amal Perera songs here on Sinhala Chords.',
   },
 
   'Nemesis': {
-    description: 'Nemesis is a popular Sri Lankan rock band known for powerful, emotionally charged Sinhala rock songs. Chakithaya is their most played song and a must-know for Sinhala rock guitarists. Find free guitar chord charts for Nemesis songs on Sinhala Chroads.',
+    description: 'Nemesis is a popular Sri Lankan rock band known for powerful, emotionally charged Sinhala rock songs. Chakithaya is their most played song and a must-know for Sinhala rock guitarists. Find free guitar chord charts for Nemesis songs on Sinhala Chords.',
   },
 
   'Amarasiri Peiris': {
@@ -69,11 +69,11 @@ window.ARTISTS_DATA = {
   },
 
   'Rookantha Gunathilaka': {
-    description: 'Rookantha Gunathilaka is one of Sri Lanka\'s most celebrated singers, known for his smooth, expressive voice and deeply romantic Sinhala songs. Dawasak Daa is among his most beloved classics. Explore free and accurate Sinhala guitar chord charts for Rookantha Gunathilaka songs on Sinhala Chroads.',
+    description: 'Rookantha Gunathilaka is one of Sri Lanka\'s most celebrated singers, known for his smooth, expressive voice and deeply romantic Sinhala songs. Dawasak Daa is among his most beloved classics. Explore free and accurate Sinhala guitar chord charts for Rookantha Gunathilaka songs on Sinhala Chords.',
   },
 
   'Dasun Shanaka': {
-    description: 'Dasun Shanaka is one of Sri Lanka\'s most popular contemporary singers, celebrated for his smooth voice and emotionally resonant Sinhala songs. Adare Pawasala is one of his most beloved hits and a favourite for guitarists. Find free Sinhala guitar chord charts for Dasun Shanaka songs on Sinhala Chroads.',
+    description: 'Dasun Shanaka is one of Sri Lanka\'s most popular contemporary singers, celebrated for his smooth voice and emotionally resonant Sinhala songs. Adare Pawasala is one of his most beloved hits and a favourite for guitarists. Find free Sinhala guitar chord charts for Dasun Shanaka songs on Sinhala Chords.',
   },
 
   'Bathiya and Santhush': {
@@ -85,11 +85,11 @@ window.ARTISTS_DATA = {
   },
 
   'T.M. Jayarathna': {
-    description: 'T.M. Jayarathna is a celebrated Sri Lankan classical and folk singer known for his expressive voice and deeply emotional Sinhala songs. Sithin Ma Nosalee is one of his most iconic songs and a favourite for guitarists. Find free Sinhala guitar chord charts for T.M. Jayarathna songs on Sinhala Chroads.',
+    description: 'T.M. Jayarathna is a celebrated Sri Lankan classical and folk singer known for his expressive voice and deeply emotional Sinhala songs. Sithin Ma Nosalee is one of his most iconic songs and a favourite for guitarists. Find free Sinhala guitar chord charts for T.M. Jayarathna songs on Sinhala Chords.',
   },
 
   'H.R. Jothipala': {
-    description: 'H.R. Jothipala is a legendary Sri Lankan vocalist celebrated for his unique voice and timeless Sinhala pop and folk songs. Me Jeewanaye is among his most cherished and widely played songs. Explore free Sinhala guitar chord charts for H.R. Jothipala songs on Sinhala Chroads.',
+    description: 'H.R. Jothipala is a legendary Sri Lankan vocalist celebrated for his unique voice and timeless Sinhala pop and folk songs. Me Jeewanaye is among his most cherished and widely played songs. Explore free Sinhala guitar chord charts for H.R. Jothipala songs on Sinhala Chords.',
   },
 
   'Amaradeva': {
@@ -97,7 +97,7 @@ window.ARTISTS_DATA = {
   },
 
   'Athula Adhikari': {
-    description: 'Athula Adhikari is a popular Sri Lankan singer known for his romantic, melodic Sinhala songs that resonate with listeners of all ages. Hitha Assata Heena Godak is one of his most beloved hits. Discover free and accurate Sinhala guitar chord charts for Athula Adhikari songs on Sinhala Chroads.',
+    description: 'Athula Adhikari is a popular Sri Lankan singer known for his romantic, melodic Sinhala songs that resonate with listeners of all ages. Hitha Assata Heena Godak is one of his most beloved hits. Discover free and accurate Sinhala guitar chord charts for Athula Adhikari songs on Sinhala Chords.',
   },
 
 };

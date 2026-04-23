@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// SINHALA CHROADS — Song Index (metadata only, no chord content)
+// SINHALA CHORDS — Song Index (metadata only, no chord content)
 // Add new artists here. Keep content in songs-content-NNN-NNN.js chunks.
 // ─────────────────────────────────────────────────────────────────────────────
 

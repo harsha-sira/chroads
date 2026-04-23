@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// SINHALA CHROADS — Chord Content Chunk: Songs 1–50
+// SINHALA CHORDS — Chord Content Chunk: Songs 1–50
 // Edit chord charts here. Add new songs (36–50) to this file.
 // For songs 51+, create songs-content-051-100.js using the same pattern.
 // ─────────────────────────────────────────────────────────────────────────────

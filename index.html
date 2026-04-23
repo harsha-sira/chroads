@@ -561,7 +561,7 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
       ) : (
         <>
           <div className="section-header">
-            <span className="section-label">🏆 Top 100 Songs</span>
+            <span className="section-label">🏆 Top Songs</span>
             <span className="section-action" onClick={onAllArtists}>All Artists →</span>
           </div>
           {top100.length
@@ -796,37 +796,30 @@ function TermsPage() {
 }
 
 function ContactPage() {
-  const [sent,setSent]=useState(false);
-  const [form,setForm]=useState({name:'',email:'',subject:'general',message:''});
-  const upd=k=>e=>setForm(f=>({...f,[k]:e.target.value}));
-  if(sent) return (
-    <div className="legal-page" style={{textAlign:'center',paddingTop:60}}>
-      <div style={{fontSize:40,marginBottom:12}}>✅</div>
-      <h1 style={{marginBottom:12}}>Message Sent!</h1>
-      <p>Thanks for reaching out. We'll get back to you soon.</p>
-    </div>
-  );
   return (
     <div className="legal-page">
-      <h1>Contact</h1>
+      <h1>Contact Us</h1>
       <p className="legal-date">We'd love to hear from you</p>
-      <p>Song request, chord correction, or want to submit chords? Drop us a message.</p>
-      <form className="contact-form" onSubmit={e=>{e.preventDefault();setSent(true);}}>
-        <div><label>Your Name</label><input type="text" placeholder="Amal Perera" value={form.name} onChange={upd('name')} required/></div>
-        <div><label>Email</label><input type="email" placeholder="amal@example.com" value={form.email} onChange={upd('email')} required/></div>
-        <div><label>Subject</label>
-          <select value={form.subject} onChange={upd('subject')}>
-            <option value="general">General Inquiry</option>
-            <option value="song-request">Song Request</option>
-            <option value="submit-song">Submit a Song</option>
-            <option value="correction">Chord Correction</option>
-            <option value="copyright">Copyright Issue</option>
-            <option value="other">Other</option>
-          </select>
+
+      <p>Have a question, found a chord mistake, or want to request a song? We're happy to help. Reach us directly by email and we'll get back to you as soon as we can.</p>
+
+      <div style={{margin:'28px 0',padding:'20px 24px',background:'var(--surface)',borderRadius:12,border:'1.5px solid var(--border)',display:'flex',alignItems:'center',gap:16}}>
+        <div style={{fontSize:28,flexShrink:0}}>✉️</div>
+        <div>
+          <div style={{fontSize:12,fontWeight:700,letterSpacing:1,textTransform:'uppercase',color:'var(--text-muted)',marginBottom:4}}>Email us at</div>
+          <a href="mailto:support@sinhalachords.com" style={{fontSize:17,fontWeight:700,color:'var(--chord)'}}>support@sinhalachords.com</a>
         </div>
-        <div><label>Message</label><textarea placeholder="Write your message here…" value={form.message} onChange={upd('message')} required/></div>
-        <button type="submit" className="submit-btn">Send Message</button>
-      </form>
+      </div>
+
+      <h2 style={{marginTop:32,marginBottom:12}}>What can we help with?</h2>
+      <ul style={{paddingLeft:20,lineHeight:2,color:'var(--text-muted)'}}>
+        <li><span style={{color:'var(--text)'}}>Song requests</span> — tell us which song you'd like added next</li>
+        <li><span style={{color:'var(--text)'}}>Chord corrections</span> — spotted a wrong chord? let us know</li>
+        <li><span style={{color:'var(--text)'}}>Copyright concerns</span> — rights holders may request removal</li>
+        <li><span style={{color:'var(--text)'}}>General feedback</span> — we read everything</li>
+      </ul>
+
+      <p style={{marginTop:28,color:'var(--text-muted)',fontSize:14}}>We typically respond within 1–2 business days.</p>
     </div>
   );
 }
@@ -837,15 +830,14 @@ function Footer({ onNav }) {
     <footer className="footer">
       <div className="footer-inner">
         <div>
-          <div className="footer-brand">Sinhala Ch<span>r</span>oads</div>
+          <div className="footer-brand">Sinhala <span>Chords</span></div>
           <div className="footer-tagline">Free Sinhala guitar chord charts &amp; lyrics</div>
         </div>
         <div className="footer-nav-grid">
           <div className="footer-nav-col">
             <h4>Explore</h4>
-            <a href="#" onClick={e=>{e.preventDefault();onNav('home');}}>Top 100 Songs</a>
+            <a href="#" onClick={e=>{e.preventDefault();onNav('home');}}>Top Songs</a>
             <a href="#" onClick={e=>{e.preventDefault();onNav('allArtists');}}>All Artists</a>
-            <a href="#" onClick={e=>{e.preventDefault();onNav('contact');}}>Submit a Song</a>
           </div>
           <div className="footer-nav-col">
             <h4>Support</h4>
