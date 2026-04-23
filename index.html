@@ -79,8 +79,8 @@
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-<!-- Song database — edit data/songs.js to add/remove/update songs -->
-<script src="data/songs.js"></script>
+<!-- Song index (metadata). Chord content is lazy-loaded per chunk on song pages. -->
+<script src="data/songs-index.js"></script>
 
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -292,6 +292,20 @@ const BASE_URL  = 'https://sinhalachords.com';
 
 const SONGS   = window.SONGS_DATA;
 const ARTISTS = window.ARTISTS_DATA || {};
+
+function chunkFile(id) {
+  const n  = Math.ceil(id / 50);
+  const lo = String((n-1)*50+1).padStart(3,'0');
+  const hi = String(n*50).padStart(3,'0');
+  return `data/songs-content-${lo}-${hi}.js`;
+}
+function loadChunk(id, onDone) {
+  if (window.SONGS_CONTENT && window.SONGS_CONTENT[id] !== undefined) { onDone(); return; }
+  const s = document.createElement('script');
+  s.src = chunkFile(id);
+  s.onload = onDone;
+  document.head.appendChild(s);
+}
 
 // ── URL / slug helpers ────────────────────────────────────────────────────────
 function slugify(str) {
@@ -682,7 +696,9 @@ function SongView({ song, songs, onSelectSong, onArtist }) {
   const origRoot = song.key.match(/^([A-G][#b]?)/)?.[1]||song.key;
   const [semitones,   setSemitones]   = useState(()=>{ const v=localStorage.getItem(`tr_${song.id}`); return v?parseInt(v):0; });
   const [selectedKey, setSelectedKey] = useState(()=>localStorage.getItem(`sk_${song.id}`)||origRoot);
+  const [contentReady, setContentReady] = useState(()=>!!(window.SONGS_CONTENT&&window.SONGS_CONTENT[song.id]!==undefined));
 
+  useEffect(()=>{ loadChunk(song.id, ()=>setContentReady(true)); }, [song.id]);
   useEffect(()=>{ localStorage.setItem(`tr_${song.id}`,semitones); },   [semitones,song.id]);
   useEffect(()=>{ localStorage.setItem(`sk_${song.id}`,selectedKey); }, [selectedKey,song.id]);
 
@@ -708,7 +724,10 @@ function SongView({ song, songs, onSelectSong, onArtist }) {
 
       <InlineKeyGrid song={song} selectedKey={selectedKey} onPick={handleKeyPick} />
       <BmcBanner />
-      <ChordSheet content={song.content} semitones={semitones} />
+      {contentReady
+        ? <ChordSheet content={(window.SONGS_CONTENT||{})[song.id]||''} semitones={semitones} />
+        : <div style={{textAlign:'center',padding:'40px 0',color:'var(--text-dim)'}}>Loading…</div>
+      }
 
       <div className="ad-wrap"><AdBlock size="lg" /></div>
 
