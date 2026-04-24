@@ -520,15 +520,29 @@ const HOME_DEFAULT_LIMIT = 30;
 
 function HomePage({ songs, onSelectSong, onAllArtists }) {
   const [q, setQ] = useState('');
-  const [showAll, setShowAll] = useState(false);
+  const searchRef = React.useRef(null);
   const trimmed = q.trim();
   const top100 = songs.filter(s => s.tags && s.tags.includes('top100'));
-  const visibleSongs = showAll ? top100 : top100.slice(0, HOME_DEFAULT_LIMIT);
+  const visibleSongs = top100.slice(0, HOME_DEFAULT_LIMIT);
   const results = trimmed
     ? songs.filter(s =>
         s.titleRoman.toLowerCase().includes(trimmed.toLowerCase()) ||
         s.artist.toLowerCase().includes(trimmed.toLowerCase()))
     : null;
+
+  const searchInput = (ref) => (
+    <div className="home-search-wrap">
+      <span className="home-search-icon"><SearchSVG /></span>
+      <input
+        ref={ref}
+        className="home-search"
+        placeholder="Search songs or artists…"
+        value={q}
+        onChange={e => setQ(e.target.value)}
+        autoComplete="off"
+      />
+    </div>
+  );
 
   return (
     <div className="home">
@@ -539,16 +553,7 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
           Pick a song, grab your guitar, and play.
         </div>
         <div className="ad-wrap"><AdBlock size="sm" /></div>
-        <div className="home-search-wrap">
-          <span className="home-search-icon"><SearchSVG /></span>
-          <input
-            className="home-search"
-            placeholder="Search songs or artists…"
-            value={q}
-            onChange={e => setQ(e.target.value)}
-            autoComplete="off"
-          />
-        </div>
+        {searchInput(null)}
         <BmcBanner />
       </div>
 
@@ -572,12 +577,7 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
             ? <>
                 <div className="songs-list">{visibleSongs.map(s=><SongCard key={s.id} song={s} onClick={()=>onSelectSong(s.id)}/>)}</div>
                 {top100.length > HOME_DEFAULT_LIMIT && (
-                  <button
-                    onClick={()=>setShowAll(v=>!v)}
-                    style={{marginTop:12,width:'100%',padding:'12px',borderRadius:10,border:'1.5px solid var(--border)',background:'var(--surface)',color:'var(--chord)',fontWeight:600,fontSize:14,cursor:'pointer'}}
-                  >
-                    {showAll ? `Show less ↑` : `Show all ${top100.length} songs ↓`}
-                  </button>
+                  <div style={{marginTop:12}}>{searchInput(searchRef)}</div>
                 )}
               </>
             : <div className="no-results" style={{paddingTop:24}}>No top 100 songs tagged yet.</div>
