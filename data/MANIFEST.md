@@ -81,7 +81,17 @@ Edit the chunk file directly for lyric/chord fixes. Ask for a commit when done.
 | 68 | Unmadawu Premadare                     | Kamal Addarachchi       |
 | 69 | Bolpini Wahena Welawe                  | Rookantha Gunathilaka   |
 | 70 | Manik Apsaravi                         | Tharindu Arsecularathna |
-| 71 | *(next song here)*                     |                         |
+| 71 | Pura Poya Handata                      | Sunil Edirisinghe       |
+| 72 | Iki Gasa Handana                       | Amarasiri Peiris        |
+| 73 | Sanda Paana Wage Dilenne               | Rookantha Gunathilaka   |
+| 74 | Kohe Yannada Ma                        | Bachi Susan             |
+| 75 | Ma Ithin Yanna Yanawa                  | Sunil Edirisinghe       |
+| 76 | Me Anantha Raththriye                  | Damith Asanka           |
+| 77 | Nupurudu Oba Dutu Palamu Dine          | Asanka Priyamantha Peiris |
+| 78 | Dileepa Podi Puthu                     | Clarence Wijewardana    |
+| 79 | Mihiraviye                             | Shihan Mihiranga        |
+| 80 | Sililaara Sitha Nayana                 | Athula Adhikari         |
+| 81 | *(next song here)*                     |                         |
 
 ## Notes
 - To add a song: append to songs-index.js + append content to the right chunk file + update sitemap.xml
