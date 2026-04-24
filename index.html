@@ -516,10 +516,14 @@ function SongCard({ song, onClick }) {
 }
 
 // ── Home Page ─────────────────────────────────────────────────────────────────
+const HOME_DEFAULT_LIMIT = 30;
+
 function HomePage({ songs, onSelectSong, onAllArtists }) {
   const [q, setQ] = useState('');
+  const [showAll, setShowAll] = useState(false);
   const trimmed = q.trim();
   const top100 = songs.filter(s => s.tags && s.tags.includes('top100'));
+  const visibleSongs = showAll ? top100 : top100.slice(0, HOME_DEFAULT_LIMIT);
   const results = trimmed
     ? songs.filter(s =>
         s.titleRoman.toLowerCase().includes(trimmed.toLowerCase()) ||
@@ -565,7 +569,17 @@ function HomePage({ songs, onSelectSong, onAllArtists }) {
             <span className="section-action" onClick={onAllArtists}>All Artists →</span>
           </div>
           {top100.length
-            ? <div className="songs-list">{top100.map(s=><SongCard key={s.id} song={s} onClick={()=>onSelectSong(s.id)}/>)}</div>
+            ? <>
+                <div className="songs-list">{visibleSongs.map(s=><SongCard key={s.id} song={s} onClick={()=>onSelectSong(s.id)}/>)}</div>
+                {top100.length > HOME_DEFAULT_LIMIT && (
+                  <button
+                    onClick={()=>setShowAll(v=>!v)}
+                    style={{marginTop:12,width:'100%',padding:'12px',borderRadius:10,border:'1.5px solid var(--border)',background:'var(--surface)',color:'var(--chord)',fontWeight:600,fontSize:14,cursor:'pointer'}}
+                  >
+                    {showAll ? `Show less ↑` : `Show all ${top100.length} songs ↓`}
+                  </button>
+                )}
+              </>
             : <div className="no-results" style={{paddingTop:24}}>No top 100 songs tagged yet.</div>
           }
         </>
