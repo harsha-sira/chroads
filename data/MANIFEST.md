@@ -71,7 +71,17 @@ Edit the chunk file directly for lyric/chord fixes. Ask for a commit when done.
 | 58 | Maali Sihina Kumari                    | Athma Liyanage          |
 | 59 | Ma Nisa Oba                            | Milton Mallawarachchi   |
 | 60 | Hiruge Lowedi                          | Clarence Wijewardana    |
-| 61 | *(next song here)*                     |                         |
+| 61 | Ra Sihinen Oba Langa Ma                | Shihan Mihiranga        |
+| 62 | Ahasin Eha                             | Kasun Kalhara           |
+| 63 | Chandrayan Pidu                        | Daddy                   |
+| 64 | Me Nagaraya                            | Mervin Perera           |
+| 65 | Desa Piya Gath Kala                    | Clarence Wijewardana    |
+| 66 | Ape Hangumwalata                       | Victor Rathnayake       |
+| 67 | Asurin Mideela                         | Priya Sooriyasena       |
+| 68 | Unmadawu Premadare                     | Kamal Addarachchi       |
+| 69 | Bolpini Wahena Welawe                  | Rookantha Gunathilaka   |
+| 70 | Manik Apsaravi                         | Tharindu Arsecularathna |
+| 71 | *(next song here)*                     |                         |
 
 ## Notes
 - To add a song: append to songs-index.js + append content to the right chunk file + update sitemap.xml

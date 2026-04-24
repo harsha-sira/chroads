@@ -179,6 +179,31 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/shihan-mihiranga</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/daddy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/mervin-perera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/kamal-addarachchi</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/artist/tharindu-arsecularathna</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Song pages -->
   <url>
@@ -473,6 +498,56 @@
   </url>
   <url>
     <loc>https://sinhalachords.com/song/hiruge-lowedi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/ra-sihinen-oba-langa-ma</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/ahasin-eha</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/chandrayan-pidu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/me-nagaraya</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/desa-piya-gath-kala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/ape-hangumwalata</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/asurin-mideela</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/unmadawu-premadare</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/bolpini-wahena-welawe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sinhalachords.com/song/manik-apsaravi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
