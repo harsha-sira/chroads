@@ -91,7 +91,17 @@ Edit the chunk file directly for lyric/chord fixes. Ask for a commit when done.
 | 78 | Dileepa Podi Puthu                     | Clarence Wijewardana    |
 | 79 | Mihiraviye                             | Shihan Mihiranga        |
 | 80 | Sililaara Sitha Nayana                 | Athula Adhikari         |
-| 81 | *(next song here)*                     |                         |
+| 81 | Diyakinduriya Se Sagare                | H.R. Jothipala          |
+| 82 | Oba Gawa Mama Innemi                   | Milton Mallawarachchi   |
+| 83 | Himi Nowuna                            | Bachi Susan             |
+| 84 | Ridena Noriddena                       | Sanka Dineth            |
+| 85 | Daiwayogayakin Nowedo                  | Victor Rathnayake       |
+| 86 | Amma Sandaki                           | T.M. Jayarathna         |
+| 87 | Mata Rawana                            | La Signore              |
+| 88 | Kuweniye Ma Kuweniye Ma                | Ridma Weerawardena      |
+| 89 | Unmada Sithuwam                        | Gunadasa Kapuge         |
+| 90 | Kiri Kodu Hithata                      | Bathiya and Santhush    |
+| 91 | *(next song here)*                     |                         |
 
 ## Notes
 - To add a song: append to songs-index.js + append content to the right chunk file + update sitemap.xml
